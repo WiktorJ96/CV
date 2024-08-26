@@ -213,6 +213,7 @@ a{
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .skill-item:hover {
