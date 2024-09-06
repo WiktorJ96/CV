@@ -41,26 +41,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const sections = document.querySelectorAll('.section');
     sections.forEach(section => {
         section.addEventListener('mouseenter', () => {
-            section.style.transform = 'scale(1.02)';
+            section.style.transform = 'scale(1.005)';
         });
         section.addEventListener('mouseleave', () => {
             section.style.transform = 'scale(1)';
         });
     });
-
-    
-    const summary = document.querySelector('.section p');
-    const originalText = summary.textContent;
-    summary.textContent = '';
-    let i = 0;
-    const typeWriter = () => {
-        if (i < originalText.length) {
-            summary.textContent += originalText.charAt(i);
-            i++;
-            setTimeout(typeWriter, 30);
-        }
-    };
-    typeWriter();
 
     
     const jobs = document.querySelectorAll('.job');
