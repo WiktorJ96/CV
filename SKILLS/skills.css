@@ -17,6 +17,7 @@
 }
 
  body {
+    background: linear-gradient(60deg, #efecec 0%, #f2f3f5 100%);
      font-family: 'Poppins', sans-serif;
      animation: fadeIn 1s ease-in-out;
      overflow-x: hidden;
