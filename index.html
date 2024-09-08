@@ -15,149 +15,15 @@
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <link rel="stylesheet" href="index.css">
 </head>
-<style>
-    .project-button_CH {
-    display: inline-flex;
-    align-items: center;
-    padding: 10px 20px;
-    background-image: linear-gradient(135deg, #09a1f9 0%, #0d47a1 100%);
-    color: white;
-    text-decoration: none;
-    border-radius: 50px;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    border: none;
-    cursor: pointer;
-    margin-top: 0px;
-    overflow: hidden;
-    position: relative;
-}
-
-.project-button_CH:before {
-    content: '\f00c';
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    margin-right: 10px;
-    background: linear-gradient(135deg, rgba(255,255,255,0.4), rgba(255,255,255,0.1));
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 
-        0 4px 15px rgba(9, 161, 249, 0.3),
-        inset 0 2px 5px rgba(255, 255, 255, 0.3),
-        inset 0 -2px 5px rgba(9, 161, 249, 0.3);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255,255,255,0.18);
-    transition: all 0.3s ease;
-}
-
-.project-button_CH:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
-}
-
-.project-button_CH:hover:before {
-    transform: rotate(360deg);
-}
-
-.project-button_CH:after {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 70%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.project-button_CH:hover:after {
-    opacity: 1;
-    animation: rotate 6s linear infinite;
-}
-
-@keyframes rotate {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-
-.project-button_TS {
-        padding: 0px;
-        min-width: 150px; 
-        background: none;
-        border: none;
-        cursor: pointer;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        border-radius: 5px;
-}
-
-.project-button_TS:hover {
-        transform: scale(1.05);
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
-
-    .project-button_TS:active {
-        transform: scale(0.95);
-    }
-
-
-
-.project-button_V {
-        display: inline-block;
-        text-decoration: none;
-        color: inherit;
-        font-size: 28px;
-        font-weight: bold;
-        padding: 10px 20px;
-        border-radius: 5px;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        background: none;
-        border: none;
-        cursor: pointer;
-        outline: none;
-        margin-top: -5px;
-    }
-
-    .project-button_V:hover {
-        transform: scale(1.05);
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
-
-    .project-button_V:active {
-        transform: scale(0.95);
-    }
-
-    .gradient-icon {
-        background: linear-gradient(135deg, #FFD700, #B22222); 
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .gradient-text {
-        background: linear-gradient(135deg, #FFD700, #B22222);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-</style>
 <body>
-        <div id="particles-js"></div>
-    <button id="theme-toggle">Zmień motyw</button>
+    <div id="particles-js"></div>
+    <button id="theme-toggle" data-lang-key="theme-toggle">Zmień motyw</button>
     <div class="container">
         <header>
             <div class="header-background"></div>
             <div class="header-content">
-                <h1 class="floating">Wiktor Jurkowski</h1>
-                <p class="subtitle">Front-end developer</p>
+                <h1 class="floating" data-lang-key="name">Wiktor Jurkowski</h1>
+                <p class="subtitle" data-lang-key="job-title">Front-end developer</p>
                 <div class="contact-info">
                     <a href="https://github.com/WiktorJ96/PROJECTS" target="_blank"><i class="fab fa-github"></i> GitHub</a>
                     <a href="https://www.linkedin.com/in/wiktor-jurkowski-28671630a/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
@@ -167,32 +33,30 @@
         <div class="main-content">
             <div class="left-column">
                 <div class="section">
-                    <h2><i class="fas fa-user-circle"></i> O mnie</h2>
-                    <p>Interesuje mnie projektowanie i tworzenie stron internetowych oraz aplikacji. Moim celem jest rozwój na wielu płaszczyznach IT. W chwili obecnej stawiam pierwsze kroki jako Front-end developer, jednak jestem zmotywowany aby jak najszybciej zdobyć wiedzę na temat rożnych technologii i języków programowania.</p>
+                    <h2 data-lang-key="about-me"><i class="fas fa-user-circle"></i> O mnie</h2>
+                    <p data-lang-key="about-me-content">Interesuje mnie projektowanie i tworzenie stron internetowych oraz aplikacji. Moim celem jest rozwój na wielu płaszczyznach IT. W chwili obecnej stawiam pierwsze kroki jako Front-end developer, jednak jestem zmotywowany aby jak najszybciej zdobyć wiedzę na temat rożnych technologii i języków programowania.</p>
                 </div>
                 
                 <div class="section">
-                    <h2><i class="fas fa-briefcase"></i> Doświadczenie zawodowe</h2>
+                    <h2 data-lang-key="experience"><i class="fas fa-briefcase"></i> Doświadczenie zawodowe</h2>
                     
                     <div class="job">
-                        <p class="job-title">Brak doświadczenia w IT</p>
+                        <p class="job-title" data-lang-key="no-experience">Brak doświadczenia w IT</p>
                         <p class="job-date"></p>
                     </div>
-
                 </div>
                 
                 <div class="section">
-                    <h2><i class="fas fa-project-diagram"></i> Projekty</h2>
+                    <h2 data-lang-key="projects"><i class="fas fa-project-diagram"></i> Projekty</h2>
                     <div class="project-gallery">
-
                         <div class="project">
-                        <p class="project-title">Thought Space - Aplikacja do eksploracji idei</p>
-                        <p class="project-date">2024</p>
-                        <p>Thought Space to prosta aplikacja notatnikowa, oferująca podstawowe funkcje zapisywania i organizowania notatek tekstowych. Dzięki intuicyjnemu interfejsowi, umożliwia szybkie tworzenie i przechowywanie różnorodnych treści, od krótkich przypomnień po dłuższe przemyślenia, pomagając uporządkować codzienne myśli i zadania.</p>
+                            <p class="project-title" data-lang-key="thought-space-title">Thought Space - Aplikacja do eksploracji idei</p>
+                            <p class="project-date">2024</p>
+                            <p data-lang-key="thought-space-description">Thought Space to prosta aplikacja notatnikowa, oferująca podstawowe funkcje zapisywania i organizowania notatek tekstowych. Dzięki intuicyjnemu interfejsowi, umożliwia szybkie tworzenie i przechowywanie różnorodnych treści, od krótkich przypomnień po dłuższe przemyślenia, pomagając uporządkować codzienne myśli i zadania.</p>
                             <a href="https://wiktorj96.github.io/PROJECTS/ThoughtSpace/ThoughtSpace.html">
-                        <div class="logo-container">
-                            <button class="project-button_TS logo-button" onclick="showProjectDetails('thought-space')">
-                                <svg class="wooden-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610 210">
+                                <div class="logo-container">
+                                    <button class="project-button_TS logo-button" onclick="showProjectDetails('thought-space')">
+                                        <svg class="wooden-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610 210">
                                 <defs>
                                     <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
                                         <stop offset="0%" style="stop-color:#E6D5B8;stop-opacity:1" />
@@ -287,9 +151,9 @@
                     </div>
                     
                         <div class="project">
-                            <p class="project-title">Vault - Aplikacja do zarządzania finansami</p>
+                            <p class="project-title" data-lang-key="vault-title">Vault - Aplikacja do zarządzania finansami</p>
                             <p class="project-date">2024</p>
-                            <p>Vault to aplikacja do zarządzania finansami, umożliwiająca śledzenie wydatków oraz monitorowanie zmian salda konta poprzez przejrzyste wykresy. Każdy przychód i wydatek można przypisać do odpowiednich kategorii, co ułatwia analizę i kontrolę finansów.</p>
+                            <p data-lang-key="vault-description">Vault to aplikacja do zarządzania finansami, umożliwiająca śledzenie wydatków oraz monitorowanie zmian salda konta poprzez przejrzyste wykresy. Każdy przychód i wydatek można przypisać do odpowiednich kategorii, co ułatwia analizę i kontrolę finansów.</p>
                             <a href="https://wiktorj96.github.io/PROJECTS/Vault/Vault.html" class="project-button_V">
                                 <i class="fas fa-vault gradient-icon" aria-hidden="true"></i> 
                                 <span class="gradient-text">V</span>ault
@@ -297,27 +161,27 @@
                         </div>
                     
                         <div class="project">
-                            <p class="project-title">Chorely - Aplikacja typu TODO</p>
+                            <p class="project-title" data-lang-key="chorely-title">Chorely - Aplikacja typu TODO</p>
                             <p class="project-date">2024</p>
-                            <p>Chorely to aplikacja typu „to-do", stworzona do zarządzania zadaniami. Umożliwia łatwe dodawanie, edytowanie, usuwanie oraz odznaczanie zadań jako wykonane. Aplikacja pozwala również na eksport listy zadań do pliku PDF z automatycznie generowaną tabelą, co ułatwia organizację i archiwizację pracy.</p>
+                            <p data-lang-key="chorely-description">Chorely to aplikacja typu „to-do", stworzona do zarządzania zadaniami. Umożliwia łatwe dodawanie, edytowanie, usuwanie oraz odznaczanie zadań jako wykonane. Aplikacja pozwala również na eksport listy zadań do pliku PDF z automatycznie generowaną tabelą, co ułatwia organizację i archiwizację pracy.</p>
                             <a href="https://wiktorj96.github.io/PROJECTS/Chorely/Chorely.html" class="project-button_CH">
                                 Chorely
                             </a>
                         </div>
                     </div>
 
-                        <div class="project-card">
-                            <h3><i class="fab fa-github"></i> GitHub Projects</h3>
-                            <p>Zapraszam do obejrzenia wszystkich moich projektów na GitHub:</p>
-                            <div class="github-links">
-                                <a href="https://wiktorj96.github.io/PROJECTS/" class="btn btn-primary">
-                                    <i class="fas fa-globe"></i> GitHub Page
-                                </a>
-                                <a href="https://github.com/WiktorJ96/PROJECTS" class="btn btn-secondary">
-                                <i class="fas fa-code-branch"></i> Repozytorium
-                                </a>
-                            </div>
+                    <div class="project-card">
+                        <h3 data-lang-key="github-projects"><i class="fab fa-github"></i> GitHub Projects</h3>
+                        <p data-lang-key="github-invitation">Zapraszam do obejrzenia wszystkich moich projektów na GitHub:</p>
+                        <div class="github-links">
+                            <a href="https://wiktorj96.github.io/PROJECTS/" class="btn btn-primary">
+                                <i class="fas fa-globe"></i> <span data-lang-key="github-page">GitHub Page</span>
+                            </a>
+                            <a href="https://github.com/WiktorJ96/PROJECTS" class="btn btn-secondary">
+                                <i class="fas fa-code-branch"></i> <span data-lang-key="repository">Repozytorium</span>
+                            </a>
                         </div>
+                    </div>
 
                     
                 </div>
@@ -348,9 +212,9 @@ function quickSort(arr) {
             
             <div class="right-column">
                 <div class="section">
-                    <h2><i class="fas fa-code"></i> Umiejętności</h2>
+                    <h2 data-lang-key="skills"><i class="fas fa-code"></i> Umiejętności</h2>
                     <div class="skills-container">
-                       <a href="./SKILLS/html-skills.html"><div class="skill-item" data-skill="Html">HTML5</div></a>
+                        <a href="./SKILLS/html-skills.html"><div class="skill-item" data-skill="Html">HTML5</div></a>
                         <a href="./SKILLS/css-skills.html"><div class="skill-item" data-skill="Css">CSS3</div></a>
                         <a href="./SKILLS/js-skills.html"><div class="skill-item" data-skill="JS">JavaScript</div></a>
                         <a href="./SKILLS/figma-skills.html"><div class="skill-item" data-skill="Figma">Figma</div></a>
@@ -358,25 +222,26 @@ function quickSort(arr) {
                 </div>
                 
                 <div class="section">
-                    <h2><i class="fas fa-graduation-cap"></i> Wykształcenie</h2>
-                    <p><strong>Technikum Informatyczne</strong> - kwalifikacja E.12</p>
-                    <p>09.2012 – 04.2016</p>
+                    <h2 data-lang-key="education"><i class="fas fa-graduation-cap"></i> Wykształcenie</h2>
+                    <p><strong data-lang-key="school">Technikum Informatyczne</strong> - <span data-lang-key="qualification">kwalifikacja E.12</span></p>
+                    <p data-lang-key="education-date">09.2012 – 04.2016</p>
                 </div>
                 
                 <div class="section">
-                    <h2><i class="fas fa-language"></i> Języki</h2>
-                    <p>Polski (ojczysty)</p>
+                    <h2 data-lang-key="languages"><i class="fas fa-language"></i> Języki</h2>
+                    <p data-lang-key="polish">Polski (ojczysty)</p>
                     <div class="progress-bar"><div class="progress" style="width: 100%;"></div></div>
-                    <p>Angielski (B2)</p>
+                    <p data-lang-key="english">Angielski (B2)</p>
                     <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
-                    <p>Norweski (A2)</p>
+                    <p data-lang-key="norwegian">Norweski (A2)</p>
                     <div class="progress-bar"><div class="progress" style="width: 30%;"></div></div>
                 </div>
 
                 <div class="section section_tech">
-                    <h2><i class="fas fa-chart-bar"></i> Doświadczenie w technologiach</h2>
+                    <h2 data-lang-key="tech-experience"><i class="fas fa-chart-bar"></i> Doświadczenie w technologiach</h2>
                     <div id="experience-chart"></div>
                 </div>
+  
 
 
                 <!-- <div class="section">
@@ -392,5 +257,6 @@ function quickSort(arr) {
 
     <script src="index.js">
     </script>
+    <script src="translate.js"></script>
 </body>
 </html>
