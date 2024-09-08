@@ -28,7 +28,7 @@ async function changeLanguage(lang) {
             if (element.tagName === 'INPUT' && element.type === 'submit') {
                 element.value = translations[key];
             } else {
-                element.textContent = translations[key];
+                element.innerHTML = translations[key];
             }
         }
     });
