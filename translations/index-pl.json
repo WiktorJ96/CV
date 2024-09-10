@@ -12,7 +12,7 @@
   "vault-title": "Vault - Aplikacja do zarządzania finansami",
   "vault-description": "Vault to aplikacja do zarządzania finansami, umożliwiająca śledzenie wydatków oraz monitorowanie zmian salda konta poprzez przejrzyste wykresy. Każdy przychód i wydatek można przypisać do odpowiednich kategorii, co ułatwia analizę i kontrolę finansów.",
   "chorely-title": "Chorely - Aplikacja typu TODO",
-  "chorely-description": "Chorely to aplikacja typu 'to-do', stworzona do zarządzania zadaniami. Umożliwia łatwe dodawanie, edytowanie, usuwanie oraz odznaczanie zadań jako wykonane. Aplikacja pozwala również na eksport listy zadań do pliku PDF z automatycznie generowaną tabelą, co ułatwia organizację i archiwizację pracy.",
+  "chorely-description": "Chorely to aplikacja typu 'to-do', stworzona do zarządzania zadaniami. Umożliwia łatwe dodawanie, edytowanie, usuwanie oraz odznaczanie zadań jako wykonane. Aplikacja pozwala również na eksport listy zadań do pliku PDF z automatycznie generowaną tabelą, co ułatwia organizację i archiwizację pracy. Chorely jest zaprojektowana jako Progressive Web App (PWA), co oznacza, że łączy w sobie zalety aplikacji webowych i natywnych.",
   "github-projects": "<i class='fab fa-github'></i> GitHub Projects",
   "github-invitation": "Zapraszam do obejrzenia wszystkich moich projektów na GitHub:",
   "github-page": "GitHub Page",
