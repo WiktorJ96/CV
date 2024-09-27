@@ -120,7 +120,8 @@ const data = [
     { technology: 'JavaScript', procent: 70 },
     { technology: 'HTML5', procent: 85 },
     { technology: 'CSS5', procent: 85 },
-    { technology: 'Figma', procent: 70 }
+    { technology: 'Figma', procent: 70 },
+    { technology: 'XML', procent: 85 }
 ];
 
 const margin = { top: 30, right: 20, bottom: 100, left: 50 };
@@ -137,7 +138,8 @@ const colors = {
     'JavaScript': '#f1c40f',  
     'HTML5': '#e34c26',       
     'CSS5': '#1572b6',        
-    'Figma': '#a259ff'        
+    'Figma': '#a259ff',
+    'XML': '#3498db'
 };
 
 

@@ -94,6 +94,7 @@ body {
         right: 10px;
         padding: 8px 12px;
         font-size: 14px;
+        width: fit-content;
     }
 }
 
@@ -366,7 +367,7 @@ a{
     color: #666;
     margin-bottom: 20px;
 }
-
+                                                    /*CHORELY BUTTON*/
 .project-button_CH {
     display: inline-flex;
     align-items: center;
@@ -441,7 +442,7 @@ a{
     100% { transform: rotate(360deg); }
 }
 
-
+                                                /* THOUGHT SPACE */
 .project-button_TS {
         padding: 0px;
         min-width: 150px; 
@@ -462,31 +463,44 @@ a{
     }
 
 
-
+                                                /* VAULT BUTTON */
 .project-button_V {
-        display: inline-block;
-        text-decoration: none;
-        color: inherit;
-        font-size: 28px;
-        font-weight: bold;
-        padding: 10px 20px;
-        border-radius: 5px;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        background: none;
-        border: none;
-        cursor: pointer;
-        outline: none;
-        margin-top: -5px;
-    }
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin-top: -5px;
+}
 
-    .project-button_V:hover {
-        transform: scale(1.05);
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
+.project-button_V:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
 
-    .project-button_V:active {
-        transform: scale(0.95);
-    }
+.project-button_V:active {
+    transform: scale(0.95);
+}
+
+.project-button_V .gradient-icon {
+    margin-right: 3px;
+}
+
+.project-button_V .gradient-text {
+    background: linear-gradient(135deg, #053f3c, #065f46, #0d9488);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
 
     .gradient-icon {
         background: linear-gradient(135deg, #FFD700, #B22222); 
