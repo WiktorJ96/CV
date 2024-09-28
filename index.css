@@ -35,6 +35,20 @@
     --text-color: #333;
     --background-color: #ecf0f1;
     --card-background: #ffffff;
+
+    --skill-languages: linear-gradient(135deg, #4CAF50, #1B5E20);
+    --skill-technologies: linear-gradient(135deg, #2196F3, #0D47A1);
+    --skill-IDE-Editors:  linear-gradient(135deg, #9C27B0, #4A148C);
+    --skill-UX-Editors:  linear-gradient(135deg, #FF5252, #B71C1C);;
+}
+
+.dark-theme {
+    --primary-color: #34495e;
+    --secondary-color: #2980b9;
+    --accent-color: #c0392b;
+    --text-color: #222;
+    --background-color: #2c3e50;
+    --card-background: #34495e;
 }
 
 body {
@@ -242,7 +256,6 @@ a{
 }
 
 .skill-item {
-    background-color: var(--secondary-color);
     color: white;
     padding: 0.8rem 1rem;
     border-radius: 8px;
@@ -277,6 +290,19 @@ a{
     left: -100%;
 }
 
+.languages{
+    background-image: var(--skill-languages);
+}
+.IDE-Editors{
+    background-image: var(--skill-IDE-Editors);
+}
+.technologies{
+    background-image: var(--skill-technologies);
+}
+.UX-Editors{
+    background-image: var(--skill-UX-Editors);
+}
+
 .progress-bar {
     width: 100%;
     background-color: #e0e0e0;
@@ -308,15 +334,6 @@ a{
 
 #theme-toggle:hover {
     background-color: var(--secondary-color);
-}
-
-.dark-theme {
-    --primary-color: #34495e;
-    --secondary-color: #2980b9;
-    --accent-color: #c0392b;
-    --text-color: #222;
-    --background-color: #2c3e50;
-    --card-background: #34495e;
 }
 
 @keyframes float {
