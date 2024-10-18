@@ -117,11 +117,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 const data = [
-    { technology: 'JavaScript', procent: 70 },
-    { technology: 'HTML5', procent: 85 },
-    { technology: 'CSS5', procent: 85 },
-    { technology: 'Figma', procent: 70 },
-    { technology: 'XML', procent: 85 }
+    { technology: 'JavaScript', procent: 66 },
+    { technology: 'HTML5', procent: 76 },
+    { technology: 'CSS5', procent: 39 },
+    { technology: 'Bootstrap', procent: 61 },
+    { technology: 'Docker', procent: 41 },
+    { technology: 'XML', procent: 85 },
+    { technology: 'Figma', procent: 26 },
+    { technology: 'VSC', procent: 76 },
 ];
 
 const margin = { top: 30, right: 20, bottom: 100, left: 50 };
@@ -134,14 +137,16 @@ const svg = d3.select('#experience-chart')
     .append('g')
     .attr('transform', `translate(${margin.left},${margin.top})`);
 
-const colors = {
-    'JavaScript': '#f1c40f',  
-    'HTML5': '#e34c26',       
-    'CSS5': '#1572b6',        
-    'Figma': '#a259ff',
-    'XML': '#3498db'
-};
-
+    const colors = {
+        'JavaScript': '#f39c12',
+        'HTML5': '#d35400',
+        'CSS5': '#2980b9',
+        'Bootstrap': '#8e44ad',
+        'Docker': '#1e90ff',
+        'XML': '#16a085',
+        'Figma': '#c0392b',
+        'VSC': '#2c3e50',
+    }
 
 const x = d3.scaleBand()
     .range([0, width])

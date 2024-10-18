@@ -15,6 +15,7 @@
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body data-page="index">
     <div id="particles-js"></div>
     <button id="theme-toggle" data-lang-key="theme-toggle">Zmień motyw</button>
@@ -44,6 +45,12 @@
                         <p class="job-title" data-lang-key="no-experience">Brak doświadczenia w IT</p>
                         <p class="job-date"></p>
                     </div>
+                </div>
+
+                <div class="section">
+                    <h2 data-lang-key="education"><i class="fas fa-graduation-cap"></i> Wykształcenie</h2>
+                    <p><strong data-lang-key="school">Technikum Informatyczne</strong> - <span data-lang-key="qualification">kwalifikacja E.12</span></p>
+                    <p data-lang-key="education-date">09.2012 – 04.2016</p>
                 </div>
                 
                 <div class="section">
@@ -279,24 +286,40 @@ function quickSort(arr) {
             
             <div class="right-column">
                 <div class="section">
+
+
+
+
                     <h2 data-lang-key="skills"><i class="fas fa-code"></i> Umiejętności</h2>
+                        <div class="legend-container">
+    <ul class="legend">
+        <li><span class="color-box" style="background: linear-gradient(135deg, #4CAF50, #1B5E20);"></span> Języki programowania</li>
+        <li><span class="color-box" style="background: linear-gradient(135deg, #FFEB3B, #F57F17);"></span> DevOps</li>
+        <li><span class="color-box" style="background: linear-gradient(135deg, #2196F3, #0D47A1);"></span> Formaty danych</li>
+        <li><span class="color-box" style="background: linear-gradient(135deg, #9C27B0, #4A148C);"></span> IDE i Edytory</li>
+        <li><span class="color-box" style="background: linear-gradient(135deg, #FF5252, #B71C1C);"></span> UX</li>
+        <!-- <li><span class="color-box" style="background: linear-gradient(135deg, #FF9800, #E65100);"></span> Backend</li> -->
+        <!-- <li><span class="color-box" style="background: linear-gradient(135deg, #673AB7, #311B92);"></span> Bazy danych</li> -->
+        <!-- <li><span class="color-box" style="background: linear-gradient(135deg, #00BCD4, #006064);"></span> Chmura</li> -->
+        <!-- <li><span class="color-box" style="background: linear-gradient(135deg, #F44336, #B71C1C);"></span> Bezpieczeństwo</li> -->
+        <!-- <li><span class="color-box" style="background: linear-gradient(135deg, #8BC34A, #33691E);"></span> Testowanie</li> -->
+        <!-- <li><span class="color-box" style="background: linear-gradient(135deg, #FFC107, #FF6F00);"></span> Mobile Development</li> -->
+        
+    </ul>
+</div>
                     <div class="skills-container">
                         <a href="./SKILLS/html-skills.html"><div class="skill-item languages" data-skill="Html"><i class="fas fa-mouse-pointer"></i>HTML5</div></a>
                         <a href="./SKILLS/css-skills.html"><div class="skill-item languages" data-skill="Css"><i class="fas fa-mouse-pointer"></i>CSS3</div></a>
                         <a href="./SKILLS/js-skills.html"><div class="skill-item languages" data-skill="JS"><i class="fas fa-mouse-pointer"></i>JavaScript</div></a>
-                        <a href="./SKILLS/xml-skills.html"><div class="skill-item technologies" data-skill="Figma"><i class="fas fa-mouse-pointer"></i>XML</div></a>
+                        <a href="./SKILLS/docker-skills.html"><div class="skill-item devops" data-skill="Docker"><i class="fas fa-mouse-pointer"></i>Docker</div></a>
+                        <a href="./SKILLS/xml-skills.html"><div class="skill-item data-formats" data-skill="XML"><i class="fas fa-mouse-pointer"></i>XML</div></a>
                         <a href="./SKILLS/figma-skills.html"><div class="skill-item UX-Editors" data-skill="Figma"><i class="fas fa-mouse-pointer"></i>Figma</div></a>
-                        <a><div class="skill-item IDE-Editors" data-skill="VSC">VSC</div></a>
+                        <a href="./SKILLS/vsc-skills.html"><div class="skill-item IDE-Editors" data-skill="VSC"><i class="fas fa-mouse-pointer"></i>VSC</div></a>
                         <a><div class="skill-item IDE-Editors" data-skill="Intellij">Intellij</div></a>
                         <a><div class="skill-item IDE-Editors" data-skill="XML-LS">XML LS</div></a>
                     </div>
                 </div>
-                
-                <div class="section">
-                    <h2 data-lang-key="education"><i class="fas fa-graduation-cap"></i> Wykształcenie</h2>
-                    <p><strong data-lang-key="school">Technikum Informatyczne</strong> - <span data-lang-key="qualification">kwalifikacja E.12</span></p>
-                    <p data-lang-key="education-date">09.2012 – 04.2016</p>
-                </div>
+              
                 
                 <div class="section">
                     <h2 data-lang-key="languages"><i class="fas fa-language"></i> Języki</h2>
@@ -328,6 +351,6 @@ function quickSort(arr) {
 
     <script src="index.js">
     </script>
-    <script src="./translations/translate.js"></script>
+    <script src="./translations/translates.js"></script>
 </body>
 </html>
