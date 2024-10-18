@@ -117,12 +117,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 const data = [
-    { technology: 'JavaScript', procent: 66 },
+    { technology: 'JavaScript', procent: 68 },
     { technology: 'HTML5', procent: 76 },
     { technology: 'CSS5', procent: 39 },
     { technology: 'Bootstrap', procent: 61 },
     { technology: 'Docker', procent: 41 },
-    { technology: 'XML', procent: 85 },
+    { technology: 'XML', procent: 65 },
     { technology: 'Figma', procent: 26 },
     { technology: 'VSC', procent: 76 },
 ];
