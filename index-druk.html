@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-key="title">Wiktor Jurkowski - CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<style>
+    /* Ogólne stylowanie */
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin: 0;
+        color: #3498db;
+    }
+
+    h2 {
+        font-size: 18px;
+        margin: 10px 0;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #3498db;
+        color: #2c3e50;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 5px 0;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    ul li {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .section {
+        margin-bottom: 20px;
+        page-break-inside: avoid; /* Zapobiega łamaniu sekcji w wersji do druku */
+    }
+
+    /* Przyciski */
+    button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #2980b9;
+    }
+
+    /* Układ dla wersji drukowanej */
+    @media print {
+        body {
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 20px;
+            border: none;
+            box-shadow: none;
+            max-width: 100%;
+        }
+
+        header {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            text-align: center;
+            page-break-after: avoid; /* Zapobiega łamaniu nagłówka */
+        }
+
+        h1 {
+            font-size: 20px;
+        }
+
+        h2 {
+            font-size: 16px;
+            margin: 8px 0;
+            padding-bottom: 5px;
+        }
+
+        p, ul li {
+            font-size: 17.5px;
+        }
+
+        button {
+            display: none;
+        }
+
+        section {
+            page-break-inside: avoid;
+        }
+
+        /* Ustawienie siatki (grid) dla dwóch kolumn w wersji drukowanej */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 20px;
+        }
+
+        .left-column, .right-column {
+            break-inside: avoid; /* Unikaj łamania sekcji na stronie */
+        }
+
+        /* Stylowanie umiejętności w dwóch kolumnach */
+        .skills-list {
+            columns: 2;
+            column-gap: 20px;
+        }
+    }
+</style>
+<body data-page="index">
+    <header>
+        <h1 data-lang-key="name">Wiktor Jurkowski</h1>
+        <p data-lang-key="job-title">Front-end Developer</p>
+        <p>e-mail: wiktorj24666@gmail.com</p>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <div class="left-column">
+                <section class="section">
+                    <h2 data-lang-key="about-me">O mnie</h2>
+                    <p data-lang-key="about-me-content">Interesuje mnie projektowanie i tworzenie stron internetowych oraz aplikacji. Moim celem jest rozwój na wielu płaszczyznach IT. Obecnie stawiam pierwsze kroki jako Front-end Developer, ale jestem zmotywowany, aby szybko zdobyć wiedzę w różnych technologiach.</p>
+                </section>
+
+                <section class="section">
+                    <h2 data-lang-key="experience">Doświadczenie zawodowe</h2>
+                    <p data-lang-key="no-experience">Brak doświadczenia w IT</p>
+                </section>
+
+                <section class="section">
+                    <h2 data-lang-key="education">Wykształcenie</h2>
+                    <p><strong data-lang-key="school">Technikum Informatyczne</strong> - <span data-lang-key="qualification">kwalifikacja E.12</span></p>
+                    <p data-lang-key="education-date">09.2012 – 04.2016</p>
+                </section>
+
+                 <section class="section">
+                    <h2 data-lang-key="skills">Umiejętności</h2>
+                    <ul class="skills-list">
+                        <li data-lang-key="skill-html">HTML5</li>
+                        <li data-lang-key="skill-css">CSS3</li>
+                        <li data-lang-key="skill-js">JavaScript</li>
+                        <li data-lang-key="skill-docker">Docker</li>
+                        <li data-lang-key="skill-figma">Figma</li>
+                        <li data-lang-key="skill-bootstrap">Bootstrap</li>
+                        <li data-lang-key="skill-xml">XML</li>
+                        <li data-lang-key="skill-vsc">Visual Studio Code</li>
+                        <li data-lang-key="skill-intellij">IntelliJ</li>
+                        <li data-lang-key="skill-xml-ls">XML Liquid Studio</li>
+                    </ul>
+                </section>
+
+                <div class="section">
+                    <h2 data-lang-key="languages"><i class="fas fa-language"></i> Języki</h2>
+                    <p data-lang-key="polish">Polski (ojczysty)</p>
+                    <div class="progress-bar"><div class="progress" style="width: 100%;"></div></div>
+                    <p data-lang-key="english">Angielski (B2)</p>
+                    <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
+                    <p data-lang-key="norwegian">Norweski (A2)</p>
+                    <div class="progress-bar"><div class="progress" style="width: 30%;"></div></div>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <section class="section">
+                    <h2 data-lang-key="projects">Projekty</h2>
+                    <p class="project-title" data-lang-key="vault-title">Vault - Aplikacja do zarządzania finansami</p>
+                    <p data-lang-key="vault-description">Vault to aplikacja do zarządzania finansami, umożliwiająca śledzenie wydatków oraz monitorowanie zmian salda konta poprzez przejrzyste wykresy. Każdy przychód i wydatek można przypisać do odpowiednich kategorii, co ułatwia analizę i kontrolę finansów.</p>
+                    <hr>
+                    <p class="project-title" data-lang-key="chorely-title">Chorely - Aplikacja typu TODO</p>
+                    <p data-lang-key="chorely-description">Chorely to aplikacja typu „to-do", stworzona do zarządzania zadaniami.
+                                Umożliwia łatwe dodawanie, edytowanie, usuwanie oraz odznaczanie zadań jako wykonane.
+                                Aplikacja pozwala również na eksport listy zadań do pliku PDF z automatycznie generowaną tabelą, co ułatwia organizację i archiwizację pracy.
+                                </p>
+                    <hr>
+                    <p class="project-title" data-lang-key="thought-space-title">Thought Space - Aplikacja typu notatnik</p>
+                    <p data-lang-key="thought-space-description">Thought Space to prosta aplikacja notatnikowa, oferująca podstawowe funkcje zapisywania i organizowania notatek tekstowych. Dzięki intuicyjnemu interfejsowi, umożliwia szybkie tworzenie i przechowywanie różnorodnych treści, od krótkich przypomnień po dłuższe przemyślenia, pomagając uporządkować codzienne myśli i zadania.</p>
+                </section>
+
+               
+            </div>
+        </div>
+    </div>
+
+    <button onclick="window.print()" data-lang-key="print-button">Drukuj CV</button>
+        <script src="index.js">
+    </script>
+    <script src="./translations/translates.js"></script>
+</body>
+</html>

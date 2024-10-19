@@ -7,7 +7,7 @@
   "experience": "<i class='fas fa-briefcase'></i> Doświadczenie zawodowe",
   "no-experience": "Brak doświadczenia w IT",
   "projects": "<i class='fas fa-project-diagram'></i> Projekty",
-  "thought-space-title": "Thought Space - Aplikacja do eksploracji idei",
+  "thought-space-title": "Thought Space - Aplikacja typu notatnik",
   "thought-space-description": "Thought Space to prosta aplikacja notatnikowa, oferująca podstawowe funkcje zapisywania i organizowania notatek tekstowych. Dzięki intuicyjnemu interfejsowi, umożliwia szybkie tworzenie i przechowywanie różnorodnych treści, od krótkich przypomnień po dłuższe przemyślenia, pomagając uporządkować codzienne myśli i zadania.",
   "vault-title": "Vault - Aplikacja do zarządzania finansami",
   "vault-description": "Vault to aplikacja do zarządzania finansami, umożliwiająca śledzenie wydatków oraz monitorowanie zmian salda konta poprzez przejrzyste wykresy. Każdy przychód i wydatek można przypisać do odpowiednich kategorii, co ułatwia analizę i kontrolę finansów.",
@@ -26,5 +26,7 @@
   "polish": "Polski (ojczysty)",
   "english": "Angielski (B2)",
   "norwegian": "Norweski (A2)",
-  "tech-experience": "<i class='fas fa-chart-bar'></i> Doświadczenie w technologiach"
+  "tech-experience": "<i class='fas fa-chart-bar'></i> Doświadczenie w technologiach",
+  "print": "<i class='fas fa-print'></i>Wersja do druku",
+  "print-btn": "Drukuj"
 }

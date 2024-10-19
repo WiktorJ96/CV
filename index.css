@@ -755,24 +755,6 @@ img, video, canvas, svg {
 }
 
 
-@media print {
-    body {
-        font-size: 12pt;
-    }
-    
-    .container {
-        width: 100%;
-        max-width: none;
-        margin: 0;
-        padding: 0;
-        box-shadow: none;
-    }
-    
-    #theme-toggle, .floating {
-        display: none;
-    }
-}
-
 
 
 

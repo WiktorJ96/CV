@@ -7,7 +7,7 @@
   "experience": "<i class='fas fa-briefcase'></i> Work Experience",
   "no-experience": "No IT experience",
   "projects": "<i class='fas fa-project-diagram'></i> Projects",
-  "thought-space-title": "Thought Space - Idea Exploration App",
+  "thought-space-title": "Thought Space - A notebook-type application",
   "thought-space-description": "Thought Space is a simple note-taking application, offering basic functions for saving and organizing text notes. Thanks to its intuitive interface, it allows for quick creation and storage of various content, from short reminders to longer reflections, helping to organize daily thoughts and tasks.",
   "vault-title": "Vault - Financial Management App",
   "vault-description": "Vault is a financial management application that allows tracking expenses and monitoring account balance changes through clear charts. Each income and expense can be assigned to appropriate categories, facilitating financial analysis and control.",
@@ -26,5 +26,7 @@
   "polish": "Polish (native)",
   "english": "English (B2)",
   "norwegian": "Norwegian (A2)",
-  "tech-experience": "<i class='fas fa-chart-bar'></i> Technology Experience"
+  "tech-experience": "<i class='fas fa-chart-bar'></i> Technology Experience",
+  "print": "<i class='fas fa-print'></i>Print Version",
+  "print-btn": "Print"
 }
