@@ -28,5 +28,6 @@
   "norwegian": "Norwegian (A2)",
   "tech-experience": "<i class='fas fa-chart-bar'></i> Technology Experience",
   "print": "<i class='fas fa-print'></i>Print Version",
-  "print-btn": "Print"
+  "print-btn": "Print",
+  "print-button": "Print CV"
 }
