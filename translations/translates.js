@@ -7,14 +7,26 @@ function getPageName() {
 
 async function loadTranslations(lang) {
     const pageName = getPageName();
+    const paths = [
+        `../translations/${pageName}-${lang}.json`,
+        `./translations/${pageName}-${lang}.json`,
+        `/translations/${pageName}-${lang}.json`
+    ];
+
     try {
-        const response = await fetch(`/translations/${pageName}-${lang}.json`);
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        translations = await response.json();
+        const fetchPromises = paths.map((path) =>
+            fetch(path).then((response) => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+        );
+
+        translations = await Promise.any(fetchPromises);
     } catch (error) {
         console.error(`Could not load translations for page ${pageName} and language ${lang}:`, error);
+        translations = {}; // ustaw pusty obiekt w przypadku błędu
     }
 }
 
