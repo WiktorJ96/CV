@@ -29,5 +29,10 @@
   "tech-experience": "<i class='fas fa-chart-bar'></i> Technology Experience",
   "print": "<i class='fas fa-print'></i>Print Version",
   "print-btn": "Print",
-  "print-button": "Print CV"
+  "print-button": "Print CV",
+  "programing-lang": "Programming languages",
+  "devops": "DevOps",
+  "formats-data": "Data formats",
+  "ide-edit": "IDEs and editors",
+  "ux": "UX"
 }
