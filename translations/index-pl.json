@@ -30,9 +30,9 @@
   "print": "<i class='fas fa-print'></i>Wersja do druku",
   "print-btn": "Drukuj",
   "print-button": "Drukuj CV",
-  "programing-lang": "Języki programowania",
-  "devops": "DevOps",
-  "formats-data": "Formaty danych",
-  "ide-edit": "IDE i edytory",
-  "ux": "UX"
+  "programing-lang": "<span class='color-box' style='background: linear-gradient(135deg, #4CAF50, #1B5E20);'></span>Języki programowania",
+  "devops": "<span class='color-box' style='background: linear-gradient(135deg, #FFEB3B, #F57F17);' ></span>DevOps",
+  "formats-data": "<span class='color-box' style='background: linear-gradient(135deg, #2196F3, #0D47A1);'></span>Formaty danych",
+  "ide-edit": "<span class='color-box' style='background: linear-gradient(135deg, #9C27B0, #4A148C);' ></span>IDE i edytory",
+  "ux": "<span class='color-box' style='background: linear-gradient(135deg, #FF5252, #B71C1C);' ></span>UX"
 }

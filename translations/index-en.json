@@ -30,9 +30,9 @@
   "print": "<i class='fas fa-print'></i>Print Version",
   "print-btn": "Print",
   "print-button": "Print CV",
-  "programing-lang": "Programming languages",
-  "devops": "DevOps",
-  "formats-data": "Data formats",
-  "ide-edit": "IDEs and editors",
-  "ux": "UX"
+  "programing-lang": "<span class='color-box' style='background: linear-gradient(135deg, #4CAF50, #1B5E20);'></span>Programming languages",
+  "devops": "<span class='color-box' style='background: linear-gradient(135deg, #FFEB3B, #F57F17);' ></span>DevOps",
+  "formats-data": "<span class='color-box' style='background: linear-gradient(135deg, #2196F3, #0D47A1);'></span>Data formats",
+  "ide-edit": "<span class='color-box' style='background: linear-gradient(135deg, #9C27B0, #4A148C);' ></span>IDEs and editors",
+  "ux": "<span class='color-box' style='background: linear-gradient(135deg, #FF5252, #B71C1C);' ></span>UX"
 }
