@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 const data = [
-    { technology: 'JavaScript', procent: 65 },
+    { technology: 'JavaScript', procent: 75 },
     { technology: 'HTML5', procent: 76 },
     { technology: 'CSS5', procent: 39 },
     { technology: 'Bootstrap', procent: 61 },
