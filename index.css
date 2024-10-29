@@ -36,17 +36,18 @@
     --background-color: #ecf0f1;
     --card-background: #ffffff;
 
-    --skill-languages: linear-gradient(135deg, #4CAF50, #1B5E20);
-    --skill-data-formats: linear-gradient(135deg, #2196F3, #0D47A1);
-    --skill-IDE-Editors:  linear-gradient(135deg, #9C27B0, #4A148C);
-    --skill-UX-Editors:  linear-gradient(135deg, #FF5252, #B71C1C);
-    --skill-backend: linear-gradient(135deg, #FF9800, #E65100);
-    --skill-databases: linear-gradient(135deg, #673AB7, #311B92);
-    --skill-cloud: linear-gradient(135deg, #00BCD4, #006064);
-    --skill-security: linear-gradient(135deg, #F44336, #B71C1C);
-    --skill-testing: linear-gradient(135deg, #8BC34A, #33691E);
-    --skill-mobile-dev: linear-gradient(135deg, #FFC107, #FF6F00);
-    --skill-devops: linear-gradient(135deg, #FFEB3B, #F57F17);
+    --skill-languages: linear-gradient(135deg, #00796B, #004D40); /* zielony - programowanie */
+    --skill-frameworks: linear-gradient(135deg, #6200EA, #311B92); /* fioletowy - nowoczesne narzędzia */
+    --skill-data-formats: linear-gradient(135deg, #03A9F4, #0288D1); /* niebieski - formaty danych */
+    --skill-IDE-Editors: linear-gradient(135deg, #455A64, #263238); /* szary - edytory kodu */
+    --skill-UX-Editors: linear-gradient(135deg, #FF7043, #BF360C); /* pomarańczowy - edytory UX/UI */
+    --skill-backend: linear-gradient(135deg, #6D4C41, #3E2723); /* brązowy - backend */
+    --skill-databases: linear-gradient(135deg, #8E24AA, #4A148C); /* głęboki fiolet - bazy danych */
+    --skill-cloud: linear-gradient(135deg, #0277BD, #01579B); /* ciemnoniebieski - chmura */
+    --skill-security: linear-gradient(135deg, #D32F2F, #B71C1C); /* czerwony - bezpieczeństwo */
+    --skill-testing: linear-gradient(135deg, #689F38, #33691E); /* oliwkowy - testowanie */
+    --skill-mobile-dev: linear-gradient(135deg, #FFA000, #FF6F00); /* pomarańczowy - mobile */
+    --skill-devops: linear-gradient(135deg, #FFB300, #FF8F00); /* złocisty bursztyn - DevOps */
 
 
 }
@@ -269,8 +270,8 @@ a{
 }
 
 .skill-item {
-    color: white;
-    padding: 0.8rem 1rem;
+    color: #fff;
+    padding: 0.5rem;
     border-radius: 8px;
     font-size: 1rem;
     text-align: center;
@@ -317,6 +318,9 @@ a{
 }
 .devops{
     background-image: var(--skill-devops);
+}
+.frameworks {
+    background-image: var(--skill-frameworks);
 }
 
 .progress-bar {

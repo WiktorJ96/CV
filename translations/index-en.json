@@ -30,9 +30,10 @@
   "print": "<i class='fas fa-print'></i>Print Version",
   "print-btn": "Print",
   "print-button": "Print CV",
-  "programing-lang": "<span class='color-box' style='background: linear-gradient(135deg, #4CAF50, #1B5E20);'></span>Programming languages",
+  "programing-lang": "<span class='color-box' style='background: linear-gradient(135deg, #00796B, #004D40);'></span>Programming languages",
   "devops": "<span class='color-box' style='background: linear-gradient(135deg, #FFEB3B, #F57F17);' ></span>DevOps",
-  "formats-data": "<span class='color-box' style='background: linear-gradient(135deg, #2196F3, #0D47A1);'></span>Data formats",
-  "ide-edit": "<span class='color-box' style='background: linear-gradient(135deg, #9C27B0, #4A148C);' ></span>IDEs and editors",
-  "ux": "<span class='color-box' style='background: linear-gradient(135deg, #FF5252, #B71C1C);' ></span>UX"
+  "formats-data": "<span class='color-box' style='background: linear-gradient(135deg, #03A9F4, #0288D1);'></span>Data formats",
+  "ide-edit": "<span class='color-box' style='background: linear-gradient(135deg, #455A64, #263238);' ></span>IDEs and editors",
+  "ux": "<span class='color-box' style='background: linear-gradient(135deg, #FF5252, #B71C1C);' ></span>UX",
+  "frameworks": "<span class='color-box' style='background: linear-gradient(135deg, #6200EA, #311B92);'></span>Frameworks"
 }
