@@ -3,7 +3,7 @@
   "name": "Wiktor Jurkowski",
   "job-title": "Front-end developer",
   "about-me": "<i class='fas fa-user-circle'></i> O mnie",
-  "about-me-content": "Interesuje mnie projektowanie i tworzenie stron internetowych oraz aplikacji. Moim celem jest rozwój na wielu płaszczyznach IT. W chwili obecnej stawiam pierwsze kroki jako Front-end developer, jednak jestem zmotywowany aby jak najszybciej zdobyć wiedzę na temat rożnych technologii i języków programowania.",
+  "about-me-content": "Interesuje mnie projektowanie i tworzenie stron internetowych oraz aplikacji. Moim celem jest rozwój na wielu płaszczyznach IT. W chwili obecnej stawiam pierwsze kroki jako Full-Stack Developer, jednak jestem zmotywowany aby jak najszybciej zdobyć szerszą wiedzę na temat rożnych technologii i języków programowania.",
   "experience": "<i class='fas fa-briefcase'></i> Doświadczenie zawodowe",
   "no-experience": "Brak doświadczenia w IT",
   "projects": "<i class='fas fa-project-diagram'></i> Projekty",
@@ -26,7 +26,7 @@
   "polish": "Polski (ojczysty)",
   "english": "Angielski (B2)",
   "norwegian": "Norweski (A2)",
-  "tech-experience": "<i class='fas fa-chart-bar'></i> Doświadczenie w technologiach",
+  "tech-experience": "<i class='fas fa-chart-bar'></i> Poziom zaawansowania",
   "print": "<i class='fas fa-print'></i>Wersja do druku",
   "print-btn": "Drukuj",
   "print-button": "Drukuj CV",
@@ -35,5 +35,5 @@
   "formats-data": "<span class='color-box' style='background: linear-gradient(135deg, #03A9F4, #0288D1);'></span>Formaty danych",
   "ide-edit": "<span class='color-box' style='background: linear-gradient(135deg, #455A64, #263238);' ></span>IDE i edytory",
   "ux": "<span class='color-box' style='background: linear-gradient(135deg, #FF5252, #B71C1C);' ></span>UX",
-  "frameworks": "<span class='color-box' style='background: linear-gradient(135deg, #6200EA, #311B92);'></span>Frameworki"
+  "technologies": "<span class='color-box' style='background: linear-gradient(135deg, #6200EA, #311B92);'></span>Technologie"
 }

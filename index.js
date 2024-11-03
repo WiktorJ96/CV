@@ -122,6 +122,8 @@ const data = [
     { technology: 'CSS5', procent: 39 },
     { technology: 'Bootstrap', procent: 61 },
     { technology: 'Sass', procent: 75 },
+    { technology: 'React', procent: 57 },
+    { technology: 'Node.js', procent: 57 },
     { technology: 'Docker', procent: 41 },
     { technology: 'XML', procent: 65 },
     { technology: 'Figma', procent: 26 },
@@ -139,16 +141,18 @@ const svg = d3.select('#experience-chart')
     .attr('transform', `translate(${margin.left},${margin.top})`);
 
     const colors = {
-        'JavaScript': '#f39c12',
-        'HTML5': '#d35400',
-        'CSS5': '#2980b9',
-        'Bootstrap': '#8e44ad',
-        'Sass': '#cc6699',
-        'Docker': '#1e90ff',
-        'XML': '#16a085',
-        'Figma': '#c0392b',
-        'VSC': '#2c3e50',
-    }
+      JavaScript: "#f39c12",
+      HTML5: "#d35400",
+      CSS5: "#2980b9",
+      Bootstrap: "#8e44ad",
+      Sass: "#cc6699",
+      React: " #61DAFB",
+      NodeJS: "#339933",
+      Docker: "#1e90ff",
+      XML: "#16a085",
+      Figma: "#c0392b",
+      VSC: "#2c3e50",
+    };
 
 const x = d3.scaleBand()
     .range([0, width])

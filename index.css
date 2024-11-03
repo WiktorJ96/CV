@@ -37,7 +37,7 @@
     --card-background: #ffffff;
 
     --skill-languages: linear-gradient(135deg, #00796B, #004D40); /* zielony - programowanie */
-    --skill-frameworks: linear-gradient(135deg, #6200EA, #311B92); /* fioletowy - nowoczesne narzędzia */
+    --skill-technologies: linear-gradient(135deg, #6200EA, #311B92); /* fioletowy - nowoczesne narzędzia */
     --skill-data-formats: linear-gradient(135deg, #03A9F4, #0288D1); /* niebieski - formaty danych */
     --skill-IDE-Editors: linear-gradient(135deg, #455A64, #263238); /* szary - edytory kodu */
     --skill-UX-Editors: linear-gradient(135deg, #FF7043, #BF360C); /* pomarańczowy - edytory UX/UI */
@@ -319,8 +319,8 @@ a{
 .devops{
     background-image: var(--skill-devops);
 }
-.frameworks {
-    background-image: var(--skill-frameworks);
+.technologies {
+    background-image: var(--skill-technologies);
 }
 
 .progress-bar {
