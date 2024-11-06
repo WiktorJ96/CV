@@ -118,16 +118,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 const data = [
     { technology: 'JavaScript', procent: 75 },
-    { technology: 'HTML5', procent: 76 },
-    { technology: 'CSS5', procent: 39 },
-    { technology: 'Bootstrap', procent: 61 },
-    { technology: 'Sass', procent: 75 },
-    { technology: 'React', procent: 57 },
-    { technology: 'Node.js', procent: 57 },
-    { technology: 'Docker', procent: 41 },
-    { technology: 'XML', procent: 65 },
-    { technology: 'Figma', procent: 26 },
-    { technology: 'VSC', procent: 76 },
+    { technology: 'HTML5', procent: 73 },
+    { technology: 'CSS5', procent: 35 },
+    { technology: 'Bootstrap', procent: 58 },
+    { technology: 'Sass', procent: 72 },
+    { technology: 'React', procent: 47 },
+    { technology: 'Node.js', procent: 51 },
+    { technology: 'Docker', procent: 36 },
+    { technology: 'XML', procent: 60 },
+    { technology: 'Figma', procent: 25 },
+    { technology: 'VSC', procent: 73 },
 ];
 
 const margin = { top: 30, right: 20, bottom: 100, left: 50 };
