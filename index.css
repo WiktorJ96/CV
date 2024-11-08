@@ -40,7 +40,7 @@
     --skill-technologies: linear-gradient(135deg, #6200EA, #311B92); /* fioletowy - nowoczesne narzędzia */
     --skill-data-formats: linear-gradient(135deg, #03A9F4, #0288D1); /* niebieski - formaty danych */
     --skill-IDE-Editors: linear-gradient(135deg, #455A64, #263238); /* szary - edytory kodu */
-    --skill-UX-Editors: linear-gradient(135deg, #FF7043, #BF360C); /* pomarańczowy - edytory UX/UI */
+    --skill-UX: linear-gradient(135deg, #FF7043, #BF360C); /* pomarańczowy - edytory UX/UI */
     --skill-backend: linear-gradient(135deg, #6D4C41, #3E2723); /* brązowy - backend */
     --skill-databases: linear-gradient(135deg, #8E24AA, #4A148C); /* głęboki fiolet - bazy danych */
     --skill-cloud: linear-gradient(135deg, #0277BD, #01579B); /* ciemnoniebieski - chmura */
@@ -313,14 +313,17 @@ a{
 .data-formats{
     background-image: var(--skill-data-formats);
 }
-.UX-Editors{
-    background-image: var(--skill-UX-Editors);
+.UX{
+    background-image: var(--skill-UX);
 }
 .devops{
     background-image: var(--skill-devops);
 }
 .technologies {
     background-image: var(--skill-technologies);
+}
+.tests{
+    background-image: var(--skill-testing);
 }
 
 .progress-bar {
@@ -404,6 +407,27 @@ a{
     color: #666;
     margin-bottom: 20px;
 }
+                                                    /* SMARTPICK BUTTON */
+.project-button_SP {
+        padding: 0px;
+        min-width: 150px; 
+        background: none;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 5px;
+}
+
+.project-button_SP:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(79, 70, 229, 0.4);
+    }
+.project-button_SP.logo-button:hover span {
+    color: #312e81;
+  }
+    .project-button_SP:active {
+        transform: scale(0.95);
+    }
                                                     /*CHORELY BUTTON*/
 .project-button_CH {
     display: inline-flex;

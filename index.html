@@ -15,7 +15,97 @@
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <link rel="stylesheet" href="index.css">
 </head>
+<style>
+  .edu-btn{
+    margin-left: 5px;
+  }
+  .education{
+     max-height: 280px; 
+    overflow-y: auto; 
+    padding: 10px; 
+    background-color: #f9f9f9; 
+  }
+      .education::-webkit-scrollbar {
+        width: 8px;
+    }
 
+    .education::-webkit-scrollbar-thumb {
+        background: #ccc;
+        border-radius: 4px;
+    }
+
+    .education::-webkit-scrollbar-thumb:hover {
+        background: #bbb;
+    }
+
+
+
+    .skills{
+     max-height: 150px; 
+    overflow-y: auto; 
+    padding: 10px; 
+    background-color: #f9f9f9; 
+  }
+    .skills::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .skills::-webkit-scrollbar-thumb {
+        background: #ccc;
+        border-radius: 4px;
+    }
+
+    .skills::-webkit-scrollbar-thumb:hover {
+        background: #bbb;
+    }
+     /* Stylizacja modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .modal-content {
+            background-color: #fff;
+            margin: 10% auto;
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 800px;
+            max-height: 80vh;
+            overflow-y: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+
+        .modal-header h2 {
+            margin: 0;
+        }
+
+        .close {
+            color: #aaa;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .close:hover {
+            color: #000;
+        }
+    
+</style>
 <body data-page="index">
     <div id="particles-js"></div>
     <button id="theme-toggle" data-lang-key="theme-toggle">Zmień motyw</button>
@@ -43,27 +133,173 @@
                     <h2 data-lang-key="experience"><i class="fas fa-briefcase"></i> Doświadczenie zawodowe</h2>
                     
                     <div class="job">
-                        <p class="job-title" data-lang-key="no-experience">Brak doświadczenia w IT</p>
+                        <p class="job-title" data-lang-key="no-experience">Brak doświadczenia komercyjnego w IT</p>
                         <p class="job-date"></p>
                     </div>
                 </div>
 
-                <div class="section">
-                    <h2 data-lang-key="education"><i class="fas fa-graduation-cap"></i> Wykształcenie</h2>
+                <div class="section education">
+                    <h2 data-lang-key="education"><i class="fas fa-graduation-cap"></i>Edukacja</h2>
                     <p><strong data-lang-key="school">Technikum Informatyczne</strong> - <span data-lang-key="qualification">kwalifikacja E.12</span></p>
                     <p data-lang-key="education-date">09.2012 – 04.2016</p>
+                    <hr>
+                    <table>
+                        <tr>
+                            <td><strong data-lang-key="udemy_course_title">Kurs Udemy:</strong></td>
+                            <td data-lang-key="course_figma">'Jak zostać swoim grafikiem' </td>
+                        </tr>
+                        <tr>
+                            <td><strong data-lang-key="course_author">Autor:</strong></td>
+                            <td>Jakub Matawiejczyk</td>
+                        </tr>
+                        <tr>
+                            <td><strong data-lang-key="course_completion_date">Data ukończenia:</strong></td>
+                            <td>01.06.2024 <a href="https://www.udemy.com/certificate/UC-44872186-baa4-4349-b792-26be564265a0/"><button class="edu-btn">certyfikat</button></a></td>
+                        </tr>
+                    </table>
+                    <hr>
+                    <table>
+                        <tr>
+                            <td><strong data-lang-key="udemy_course_title">Kurs Udemy:</strong></td>
+                            <td data-lang-key="course_docker">'Docker:Praktyczny kurs od podstaw'</td>
+                        </tr>
+                        <tr>
+                            <td><strong data-lang-key="course_author">Autor:</strong></td>
+                            <td>Rafał Podraza</td>
+                        </tr>
+                        <tr>
+                            <td><strong data-lang-key="course_completion_date">Data ukończenia:</strong></td>
+                            <td>03.10.2024<a href="https://www.udemy.com/certificate/UC-203d0f43-6db7-487a-a4e2-fd3b86d633d6/"><button class="edu-btn">certyfikat</button></a></td>
+                        </tr>
+                    </table>
+                    <hr>
+                    <table>
+                        <tr>
+                            <td><strong data-lang-key="udemy_course_title">Kurs Udemy:</strong></td>
+                            <td data-lang-key="course_bootstrap">'Bootstrap od podstaw'</td>
+                        </tr>
+                        <tr>
+                            <td><strong data-lang-key="course_author">Autor:</strong></td>
+                            <td>Mateusz Maj</td>
+                        </tr>
+                        <tr>
+                            <td><strong data-lang-key="course_completion_date">Data ukończenia:</strong></td>
+                            <td>17.10.2024<a href="https://www.udemy.com/certificate/UC-0b398b4c-600c-41e1-bebc-257f86018534/"><button class="edu-btn">certyfikat</button></a></td>
+                        </tr>
+                    </table>
+                    <hr>
+                    <table>
+                        <tr>
+                            <td><strong data-lang-key="udemy_course_title">Kurs Udemy:</strong></td>
+                            <td data-lang-key="course_js">'Komplety kurs programowanie w JavaScript'</td>
+                        </tr>
+                        <tr>
+                            <td><strong data-lang-key="course_author">Autor:</strong></td>
+                            <td>Bartłomiej Borowczyk</td>
+                        </tr>
+                        <tr>
+                            <td><strong data-lang-key="course_completion_date">Data ukończenia:</strong></td>
+                            <td>19.10.2024 <a href="https://www.udemy.com/certificate/UC-d8ac5d1a-d225-41d1-88d4-7b9b97ab2e9e/"><button class="edu-btn">certyfikat</button></a></td>
+                        </tr>
+                    </table>
                 </div>
                 
                 <div class="section">
                     <h2 data-lang-key="projects"><i class="fas fa-project-diagram"></i> Projekty</h2>
                     <div class="project-gallery">
                       
-                        
+                        <div class="project">
+                            <p class="project-title" data-lang-key="smartpick-title">SmartPick - Aplikacja do zarządzania zakupami</p>
+                            <p class="project-date">2024</p>
+                            <p data-lang-key="smartpick-description">
+                                SmartPick to aplikacja stworzona, aby ułatwić zarządzanie zakupami online. 
+                                Umożliwia tworzenie list sklepów internetowych i produktów z opcją dodawania opisów oraz linków. 
+                                Dzięki funkcji "ulubione" szybko znajdziesz produkty lub sklepy, które planujesz odwiedzić. 
+                                SmartPick pozwala także na bezpieczne przechowywanie kart płatniczych, zapewniając szybki dostęp do danych w razie potrzeby.
+                            </p>
+                            <a href="https://wiktorj96.github.io/PROJECTS/SmartPick/index.html" class="project-button_SP" style="text-decoration: none;">
+  <button class="project-button_SP logo-button" style="display: flex; align-items: center; gap: 10px; background: none; border: none; padding: 5px; cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <!-- Logo -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="50" height="50" style="transition: transform 0.3s ease;">
+      <defs>
+        <!-- Główny gradient -->
+        <linearGradient id="mainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#312e81;stop-opacity:1" />
+          <stop offset="100%" style="stop-color:#4f46e5;stop-opacity:1" />
+        </linearGradient>
+        
+        <!-- Gradient dla elementów -->
+        <linearGradient id="elementGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+          <stop offset="100%" style="stop-color:#e0e7ff;stop-opacity:1" />
+        </linearGradient>
+        
+        <!-- Efekt świecenia -->
+        <filter id="glow">
+          <feGaussianBlur stdDeviation="2" result="blur"/>
+          <feColorMatrix in="blur" type="matrix"
+            values="1 0 0 0 0
+                    0 1 0 0 0
+                    0 0 1 0 0
+                    0 0 0 15 -6"/>
+        </filter>
+      </defs>
+
+<!-- Tło -->
+<circle cx="150" cy="150" r="120" fill="url(#mainGrad)" />
+      
+<!-- Główny symbol -->
+<g transform="translate(150, 150)" fill="url(#elementGrad)" filter="url(#glow)">
+  <!-- Grupa elementów symbolizujących segregację -->
+  <g>
+    <!-- Filtry/karty produktów -->
+    <g transform="translate(-45, 0)">
+      <rect x="-20" y="-50" width="40" height="100" rx="6" opacity="0.9" />
+      <rect x="-20" y="-40" width="40" height="15" rx="3" fill="#312e81" opacity="0.3" />
+    </g>
+    
+    <g transform="translate(0, 0)">
+      <rect x="-20" y="-40" width="40" height="80" rx="6" opacity="0.9" />
+      <rect x="-20" y="-30" width="40" height="15" rx="3" fill="#312e81" opacity="0.3" />
+    </g>
+    
+    <g transform="translate(45, 0)">
+      <rect x="-20" y="-30" width="40" height="60" rx="6" opacity="0.9" />
+      <rect x="-20" y="-20" width="40" height="15" rx="3" fill="#312e81" opacity="0.3" />
+    </g>
+  </g>
+
+  <!-- Linie łączące -->
+  <path d="M-75 -55 L75 -55" stroke="white" stroke-width="3" opacity="0.6" />
+  <path d="M-75 -20 L75 -20" stroke="white" stroke-width="3" opacity="0.6" />
+  <path d="M-75 20 L75 20" stroke="white" stroke-width="3" opacity="0.6" />
+  <path d="M-75 55 L75 55" stroke="white" stroke-width="3" opacity="0.6" />
+</g>
+
+<!-- Ozdobne elementy -->
+<g transform="translate(150, 150)" stroke="white" stroke-width="2" opacity="0.3">
+  <circle r="90" fill="none" />
+  <circle r="110" fill="none" stroke-dasharray="3 6" />
+</g>
+
+    </svg>
+
+    <!-- Napis -->
+    <span style="font-family: 'Poppins', sans-serif; font-size: 22px; font-weight: 600; color: #4f46e5; letter-spacing: 0.8px; margin-left: -15px; transition: color 0.3s ease;">
+      SmartPick
+    </span>
+  </button>
+</a>
+
+                        </div>
+
                     
                         <div class="project">
                             <p class="project-title" data-lang-key="vault-title">Vault - Aplikacja do zarządzania finansami</p>
                             <p class="project-date">2024</p>
-                            <p data-lang-key="vault-description">Vault to aplikacja do zarządzania finansami, umożliwiająca śledzenie wydatków oraz monitorowanie zmian salda konta poprzez przejrzyste wykresy. Każdy przychód i wydatek można przypisać do odpowiednich kategorii, co ułatwia analizę i kontrolę finansów.</p>
+                            <p data-lang-key="vault-description">
+                              Vault to aplikacja do zarządzania finansami, umożliwiająca śledzenie wydatków oraz monitorowanie zmian salda konta poprzez przejrzyste wykresy. 
+                              Każdy przychód i wydatek można przypisać do odpowiednich kategorii, co ułatwia analizę i kontrolę finansów.</p>
                             <a href="https://wiktorj96.github.io/PROJECTS/Vault/Vault.html" class="project-button_V">
                                 <svg class="gradient-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="40" height="40" aria-hidden="true">
                                 
@@ -131,10 +367,13 @@
                         <div class="project">
                             <p class="project-title" data-lang-key="thought-space-title">Thought Space - Aplikacja typu notatnik</p>
                             <p class="project-date">2024</p>
-                            <p data-lang-key="thought-space-description">Thought Space to prosta aplikacja notatnikowa, oferująca podstawowe funkcje zapisywania i organizowania notatek tekstowych. Dzięki intuicyjnemu interfejsowi, umożliwia szybkie tworzenie i przechowywanie różnorodnych treści, od krótkich przypomnień po dłuższe przemyślenia, pomagając uporządkować codzienne myśli i zadania.</p>
+                            <p data-lang-key="thought-space-description">
+                              Thought Space to prosta aplikacja notatnikowa, oferująca podstawowe funkcje zapisywania i organizowania notatek tekstowych. 
+                              Dzięki intuicyjnemu interfejsowi, umożliwia szybkie tworzenie i przechowywanie różnorodnych treści, 
+                              od krótkich przypomnień po dłuższe przemyślenia, pomagając uporządkować codzienne myśli i zadania.</p>
                             <a href="https://wiktorj96.github.io/PROJECTS/ThoughtSpace/ThoughtSpace.html">
                                 <div class="logo-container">
-                                    <button class="project-button_TS logo-button" onclick="showProjectDetails('thought-space')">
+                                    <button class="project-button_TS logo-button" >
                                         <svg class="wooden-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610 210">
                                       <defs>
                                         <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -286,23 +525,22 @@ function quickSort(arr) {
             </div>
             
             <div class="right-column">
+
                 <div class="section">
-
-
-
-
+                  
                     <h2 data-lang-key="skills"><i class="fas fa-code"></i> Umiejętności</h2>
-                        <div class="legend-container">
+<div class="legend-container">
     <ul class="legend">
-        <li data-lang-key="programing-lang"> Języki programowania</li>
-        <li data-lang-key="technologies">Technologie</li>
-        <li data-lang-key="devops"> DevOps</li>
-        <li data-lang-key="formats-data"> Formaty danych</li>
-        <li data-lang-key="ide-edit"> IDE i Edytory</li>
-        <li data-lang-key="ux"> UX</li>
+        <li class="legend-item" data-lang-key="programing-lang" data-category="languages">Języki programowania</li>
+        <li class="legend-item" data-lang-key="technologies" data-category="technologies">Technologie</li>
+        <li class="legend-item" data-lang-key="devops" data-category="devops">DevOps</li>
+        <li class="legend-item" data-lang-key="tests" data-category="devops">Testy</li>
+        <li class="legend-item" data-lang-key="formats-data" data-category="data-formats">Formaty danych</li>
+        <li class="legend-item" data-lang-key="ide-edit" data-category="IDE-Editors">IDE i Edytory</li>
+        <li class="legend-item" data-lang-key="ux" data-category="UX">UX</li>
     </ul>
 </div>
-                    <div class="skills-container">
+                    <div class="skills-container skills">
                         <a href="./SKILLS/html-skills.html"><div class="skill-item languages" data-skill="Html"><i class="fas fa-mouse-pointer"></i>HTML5</div></a>
                         <a href="./SKILLS/css-skills.html"><div class="skill-item languages" data-skill="Css"><i class="fas fa-mouse-pointer"></i>CSS3</div></a>
                         <a href="./SKILLS/js-skills.html"><div class="skill-item languages" data-skill="JS"><i class="fas fa-mouse-pointer"></i>JavaScript</div></a>
@@ -310,9 +548,12 @@ function quickSort(arr) {
                         <a href="./SKILLS/sass-skills.html"><div class="skill-item technologies" data-skill="Sass"><i class="fas fa-mouse-pointer"></i>SASS</div></a>
                         <a href="./SKILLS/react-skills.html"><div class="skill-item technologies" data-skill="React"><i class="fas fa-mouse-pointer"></i>React</div></a>
                         <a href="./SKILLS/node.js-skills.html"><div class="skill-item technologies" data-skill="Node.js"><i class="fas fa-mouse-pointer"></i>Node.js</div></a>
+                        <a href="./SKILLS/node.js-skills.html"><div class="skill-item technologies" data-skill="Node.js"><i class="fas fa-mouse-pointer"></i>Express.js</div></a>
                         <a href="./SKILLS/docker-skills.html"><div class="skill-item devops" data-skill="Docker"><i class="fas fa-mouse-pointer"></i>Docker</div></a>
                         <a href="./SKILLS/xml-skills.html"><div class="skill-item data-formats" data-skill="XML"><i class="fas fa-mouse-pointer"></i>XML</div></a>
-                        <a href="./SKILLS/figma-skills.html"><div class="skill-item UX-Editors" data-skill="Figma"><i class="fas fa-mouse-pointer"></i>Figma</div></a>
+                        <a href="./SKILLS/json-skills.html"><div class="skill-item data-formats" data-skill="JSON"><i class="fas fa-mouse-pointer"></i>JSON</div></a>
+                        <a href="./SKILLS/postman-skills.html"><div class="skill-item tests" data-skill="Postman"><i class="fas fa-mouse-pointer"></i>Postman</div></a>
+                        <a href="./SKILLS/figma-skills.html"><div class="skill-item UX" data-skill="Figma"><i class="fas fa-mouse-pointer"></i>Figma</div></a>
                         <a href="./SKILLS/vsc-skills.html"><div class="skill-item IDE-Editors" data-skill="VSC"><i class="fas fa-mouse-pointer"></i>VSC</div></a>
                         <a><div class="skill-item IDE-Editors" data-skill="Intellij">Intellij</div></a>
                         <a><div class="skill-item IDE-Editors" data-skill="XML-LS">XML LS</div></a>
@@ -332,6 +573,79 @@ function quickSort(arr) {
 
                 <div class="section section_tech">
                     <h2 data-lang-key="tech-experience"><i class="fas fa-chart-bar"></i> Poziom zaawansowania</h2>
+                    <i class="fas fa-info-circle fs-4" style="right: 50px; position: absolute; margin-bottom: 30px; cursor: help;" id="openModal"></i>
+                    <!-- Modal -->
+    <div id="skillsModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Metodologia oceny umiejętności</h2>
+                <span class="close" id="closeModal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <h5 data-lang-key="skills-methodology-title">1. Metodologia oceny umiejętności</h5>
+        <p data-lang-key="skills-methodology-desc">*Procent jest obliczany na podstawie kart umiejętności zawartych na stronach przypisanych do danej technologii, nie uwzględniłem szerszej perspektywy umiejętności, które zapewnia dana technologia.</p>
+
+        <h6 data-lang-key="skills-classification-title">a) Klasyfikacja umiejętności według ważności</h6>
+        <p data-lang-key="skills-classification-desc">Umiejętności są podzielone na trzy kategorie:</p>
+        <ul>
+          <li data-lang-key="skills-essential"><strong>Podstawowe (Essential)</strong> – kluczowe umiejętności niezbędne w codziennej pracy.</li>
+          <li data-lang-key="skills-important"><strong>Ważne (Important)</strong> – umiejętności często używane, które znacząco rozszerzają możliwości.</li>
+          <li data-lang-key="skills-advanced"><strong>Zaawansowane (Advanced)</strong> – specjalistyczne umiejętności używane w specyficznych sytuacjach.</li>
+        </ul>
+
+        <h6 data-lang-key="weight-assignment-title">b) Przypisanie wag do kategorii ważności</h6>
+        <ul>
+          <li data-lang-key="weight-essential"><strong>Podstawowe (Essential)</strong>: waga 1 (maksymalnie 4 punktów na umiejętność)</li>
+          <li data-lang-key="weight-important"><strong>Ważne (Important)</strong>: waga 2 (maksymalnie 3 punkty na umiejętność)</li>
+          <li data-lang-key="weight-advanced"><strong>Zaawansowane (Advanced)</strong>: waga 3 (maksymalnie 2 punkty na umiejętność)</li>
+        </ul>
+
+        <h6 data-lang-key="point-assignment-title">c) Przypisanie punktów za poziom znajomości</h6>
+        <ul>
+          <li data-lang-key="points-good"><strong>Dobry</strong>: pełna liczba punktów <i class="fas fa-smile text-success" data-bs-toggle="tooltip"  title="Dobry"></i></li>
+          <li data-lang-key="points-average"><strong>Średni</strong>: połowa maksymalnej liczby punktów <i class="fas fa-meh text-warning" data-bs-toggle="tooltip"  title="Średni"></i></li>
+          <li data-lang-key="points-weak"><strong>Słaby</strong>: 0 punktów <i class="fas fa-frown text-danger" data-bs-toggle="tooltip"  title="Słaby"></i></li>
+        </ul>
+
+        <h6 data-lang-key="calculation-method-title">d) Obliczanie punktów dla każdej umiejętności</h6>
+        <p data-lang-key="calculation-method-desc">Dla każdej umiejętności obliczam maksymalną liczbę punktów oraz punkty zdobyte, uwzględniając ważność umiejętności i poziom znajomości. Następnie liczba zdobytych punktów jest dzielona przez maksymalną liczbę punktów i wynik jest mnożony przez 100%.</p>
+
+        <h5 data-lang-key="skills-categorization-title">Kategoryzacja umiejętności na podstawie kilku kluczowych czynników:</h5>
+        <ul>
+          <li data-lang-key="categorization-frequency">Częstotliwość użycia w praktyce</li>
+          <li data-lang-key="categorization-importance">Znaczenie dla podstawowej funkcjonalności technologii</li>
+          <li data-lang-key="categorization-difficulty">Poziom trudności zrozumienia i opanowania</li>
+          <li data-lang-key="categorization-standards">Standardy branżowe i wymagania rynku pracy</li>
+        </ul>
+
+        <h5 data-lang-key="detailed-criteria-title">2. Szczegółowe kryteria kategoryzacji</h5>
+
+        <h6 data-lang-key="essential-skills-title">a) Umiejętności Podstawowe (Essential)</h6>
+        <p data-lang-key="essential-skills-desc">Umiejętności podstawowe to te, które są niezbędne do rozpoczęcia pracy z technologią i stanowią fundament dla dalszego rozwoju.</p>
+        <ul>
+          <li data-lang-key="essential-necessity"><strong>Niezbędność</strong>: Bez nich trudno byłoby w ogóle pracować z technologią.</li>
+          <li data-lang-key="essential-frequency"><strong>Częstotliwość użycia</strong>: Są używane w większości projektów i codziennych zadań.</li>
+          <li data-lang-key="essential-foundation"><strong>Podstawa dla innych umiejętności</strong>: Stanowią bazę dla bardziej zaawansowanych konceptów.</li>
+        </ul>
+
+        <h6 data-lang-key="important-skills-title">b) Umiejętności Ważne (Important)</h6>
+        <p data-lang-key="important-skills-desc">Umiejętności ważne rozszerzają możliwości technologii i są często używane w bardziej złożonych projektach.</p>
+        <ul>
+          <li data-lang-key="important-application"><strong>Częste zastosowanie</strong>: Są powszechnie używane, choć nie zawsze w prostych aplikacjach.</li>
+          <li data-lang-key="important-efficiency"><strong>Zwiększenie efektywności</strong>: Pozwalają tworzyć bardziej dynamiczne i responsywne aplikacje.</li>
+          <li data-lang-key="important-knowledge"><strong>Wymagają średniozaawansowanej wiedzy</strong>: Są trudniejsze do opanowania niż podstawy.</li>
+        </ul>
+
+        <h6 data-lang-key="advanced-skills-title">c) Umiejętności Zaawansowane (Advanced)</h6>
+        <p data-lang-key="advanced-skills-desc">Umiejętności zaawansowane są bardziej specjalistyczne i wymagają głębszego zrozumienia technologii.</p>
+        <ul>
+          <li data-lang-key="advanced-usage"><strong>Mniejsza częstotliwość użycia w prostych projektach</strong>: Są niezbędne w dużych i skomplikowanych aplikacjach.</li>
+          <li data-lang-key="advanced-difficulty"><strong>Wyższy poziom trudności</strong>: Wymagają zaawansowanej wiedzy i doświadczenia.</li>
+          <li data-lang-key="advanced-impact"><strong>Znaczący wpływ na skalowalność i wydajność</strong>: Pozwalają optymalizować i zabezpieczać aplikacje.</li>
+        </ul>
+            </div>
+        </div>
+    </div>
                     <div id="experience-chart"></div>
                 </div>
   
@@ -355,5 +669,28 @@ function quickSort(arr) {
     <script src="index.js">
     </script>
     <script src="./translations/translates.js"></script>
+        <script>
+        // Elementy modal i przycisków
+        const modal = document.getElementById('skillsModal');
+        const openModalBtn = document.getElementById('openModal');
+        const closeModalBtn = document.getElementById('closeModal');
+
+        // Funkcja otwierająca modal
+        openModalBtn.addEventListener('click', () => {
+            modal.style.display = 'block';
+        });
+
+        // Funkcja zamykająca modal
+        closeModalBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        // Zamknij modal po kliknięciu poza jego zawartość
+        window.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>

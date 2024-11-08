@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <style>
-    /* Ogólne stylowanie */
     body {
         font-family: 'Roboto', sans-serif;
         margin: 0;
@@ -62,10 +61,9 @@
 
     .section {
         margin-bottom: 20px;
-        page-break-inside: avoid; /* Zapobiega łamaniu sekcji w wersji do druku */
+        page-break-inside: avoid;
     }
 
-    /* Przyciski */
     button {
         display: inline-block;
         margin-top: 20px;
@@ -84,7 +82,6 @@
         background-color: #2980b9;
     }
 
-    /* Układ dla wersji drukowanej */
     @media print {
         body {
             background-color: white;
@@ -103,21 +100,21 @@
             margin-top: 5px;
             margin-bottom: 5px;
             text-align: center;
-            page-break-after: avoid; /* Zapobiega łamaniu nagłówka */
+            page-break-after: avoid;
         }
 
         h1 {
-            font-size: 20px;
+            font-size: 15px;
         }
 
         h2 {
-            font-size: 16px;
+            font-size: 12px;
             margin: 8px 0;
             padding-bottom: 5px;
         }
 
         p, ul li {
-            font-size: 17.5px;
+            font-size: 12.5px;
         }
 
         button {
@@ -127,8 +124,9 @@
         section {
             page-break-inside: avoid;
         }
-
-        /* Ustawienie siatki (grid) dla dwóch kolumn w wersji drukowanej */
+        table{
+            font-size: 12.5px;
+        }
         .main-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -136,10 +134,9 @@
         }
 
         .left-column, .right-column {
-            break-inside: avoid; /* Unikaj łamania sekcji na stronie */
+            break-inside: avoid;
         }
 
-        /* Stylowanie umiejętności w dwóch kolumnach */
         .skills-list {
             columns: 2;
             column-gap: 20px;
@@ -163,69 +160,118 @@
 
                 <section class="section">
                     <h2 data-lang-key="experience">Doświadczenie zawodowe</h2>
-                    <p data-lang-key="no-experience">Brak doświadczenia w IT</p>
+                    <p data-lang-key="no-experience">Brak doświadczenia komercyjnego w IT</p>
                 </section>
 
                 <section class="section">
                     <h2 data-lang-key="education">Wykształcenie</h2>
                     <p><strong data-lang-key="school">Technikum Informatyczne</strong> - <span data-lang-key="qualification">kwalifikacja E.12</span></p>
                     <p data-lang-key="education-date">09.2012 – 04.2016</p>
+                    <hr>
+                    <table>
+                        <tr>
+                            <td><strong data-lang-key="udemy_course_title">Kurs Udemy:</strong></td>
+                            <td data-lang-key="course_figma">'Jak zostać swoim grafikiem'</td>
+                        </tr>
+                        <tr>
+                            <td><strong data-lang-key="course_author">Autor:</strong></td>
+                            <td>Jakub Matawiejczyk</td>
+                        </tr>
+                        <tr>
+                            <td><strong data-lang-key="course_completion_date">Data ukończenia:</strong></td>
+                            <td>01.06.2024</td>
+                        </tr>
+                    </table>
+                    <hr>
+                    <table>
+                        <tr>
+                            <td><strong data-lang-key="udemy_course_title">Kurs Udemy:</strong></td>
+                            <td data-lang-key="course_docker">'Docker: Praktyczny kurs od podstaw'</td>
+                        </tr>
+                        <tr>
+                            <td><strong data-lang-key="course_author">Autor:</strong></td>
+                            <td>Rafał Podraza</td>
+                        </tr>
+                        <tr>
+                            <td><strong data-lang-key="course_completion_date">Data ukończenia:</strong></td>
+                            <td>03.10.2024</td>
+                        </tr>
+                    </table>
+                    <hr>
+                    <table>
+                        <tr>
+                            <td><strong data-lang-key="udemy_course_title">Kurs Udemy:</strong></td>
+                            <td data-lang-key="course_js">'Komplety kurs programowanie w JavaScript'</td>
+                        </tr>
+                        <tr>
+                            <td><strong data-lang-key="course_author">Autor:</strong></td>
+                            <td>Bartłomiej Borowczyk</td>
+                        </tr>
+                        <tr>
+                            <td><strong data-lang-key="course_completion_date">Data ukończenia:</strong></td>
+                            <td>19.10.2024</td>
+                        </tr>
+                    </table>
                 </section>
 
-                 <section class="section">
+                <section class="section">
                     <h2 data-lang-key="skills">Umiejętności</h2>
                     <ul class="skills-list">
-                        <li >HTML5</li>
-                        <li >CSS3</li>
-                        <li >JavaScript</li>
-                        <li >Docker</li>
-                        <li >Figma</li>
-                        <li >Bootstrap</li>
-                        <li >Sass</li>
-                        <li >React</li>
-                        <li >Node.js</li>
-                        <li >XML</li>
-                        <li >Visual Studio Code</li>
-                        <li >IntelliJ</li>
-                        <li >XML Liquid Studio</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Docker</li>
+                        <li>Postman</li>
+                        <li>Figma</li>
+                        <li>Bootstrap</li>
+                        <li>Sass</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>XML</li>
+                        <li>JSON</li>
+                        <li>Visual Studio Code</li>
+                        <li>IntelliJ</li>
+                        <li>XML Liquid Studio</li>
                     </ul>
                 </section>
 
-                <div class="section">
-                    <h2 data-lang-key="languages"><i class="fas fa-language"></i> Języki</h2>
+                <section class="section">
+                    <h2 data-lang-key="languages">Języki</h2>
                     <p data-lang-key="polish">Polski (ojczysty)</p>
-                    <div class="progress-bar"><div class="progress" style="width: 100%;"></div></div>
                     <p data-lang-key="english">Angielski (B2)</p>
-                    <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
                     <p data-lang-key="norwegian">Norweski (A2)</p>
-                    <div class="progress-bar"><div class="progress" style="width: 30%;"></div></div>
-                </div>
+                </section>
             </div>
 
             <div class="right-column">
                 <section class="section">
                     <h2 data-lang-key="projects">Projekty</h2>
-                    <p class="project-title" data-lang-key="vault-title">Vault - Aplikacja do zarządzania finansami</p>
-                    <p data-lang-key="vault-description">Vault to aplikacja do zarządzania finansami, umożliwiająca śledzenie wydatków oraz monitorowanie zmian salda konta poprzez przejrzyste wykresy. Każdy przychód i wydatek można przypisać do odpowiednich kategorii, co ułatwia analizę i kontrolę finansów.</p>
+                    <h3>SmartPick</h3>
+                    <p>SmartPick to aplikacja stworzona, aby ułatwić zarządzanie zakupami online. 
+                                Umożliwia tworzenie list sklepów internetowych i produktów z opcją dodawania opisów oraz linków. 
+                                Dzięki funkcji "ulubione" szybko znajdziesz produkty lub sklepy, które planujesz odwiedzić. 
+                                SmartPick pozwala także na bezpieczne przechowywanie kart płatniczych, zapewniając szybki dostęp do danych w razie potrzeby.</p>
                     <hr>
-                    <p class="project-title" data-lang-key="chorely-title">Chorely - Aplikacja typu TODO</p>
-                    <p data-lang-key="chorely-description">Chorely to aplikacja typu „to-do", stworzona do zarządzania zadaniami.
+                    <h3>Vault</h3>
+                    <p>Vault to aplikacja do zarządzania finansami, umożliwiająca śledzenie wydatków oraz monitorowanie zmian salda konta poprzez przejrzyste wykresy. 
+                              Każdy przychód i wydatek można przypisać do odpowiednich kategorii, co ułatwia analizę i kontrolę finansów.</p>
+                    <hr>
+                    <h3>Chorely</h3>
+                    <p>Chorely to aplikacja typu „to-do", stworzona do zarządzania zadaniami.
                                 Umożliwia łatwe dodawanie, edytowanie, usuwanie oraz odznaczanie zadań jako wykonane.
-                                Aplikacja pozwala również na eksport listy zadań do pliku PDF z automatycznie generowaną tabelą, co ułatwia organizację i archiwizację pracy.
-                                </p>
+                                Aplikacja pozwala również na eksport listy zadań do pliku PDF z automatycznie generowaną tabelą, co ułatwia organizację i archiwizację pracy.</p>
                     <hr>
-                    <p class="project-title" data-lang-key="thought-space-title">Thought Space - Aplikacja typu notatnik</p>
-                    <p data-lang-key="thought-space-description">Thought Space to prosta aplikacja notatnikowa, oferująca podstawowe funkcje zapisywania i organizowania notatek tekstowych. Dzięki intuicyjnemu interfejsowi, umożliwia szybkie tworzenie i przechowywanie różnorodnych treści, od krótkich przypomnień po dłuższe przemyślenia, pomagając uporządkować codzienne myśli i zadania.</p>
+                    <h3>Thought Space</h3>
+                    <p>Thought Space to prosta aplikacja notatnikowa, oferująca podstawowe funkcje zapisywania i organizowania notatek tekstowych. 
+                              Dzięki intuicyjnemu interfejsowi, umożliwia szybkie tworzenie i przechowywanie różnorodnych treści, 
+                              od krótkich przypomnień po dłuższe przemyślenia, pomagając uporządkować codzienne myśli i zadania.</p>
                 </section>
-
-               
             </div>
         </div>
     </div>
 
-    <button onclick="window.print()" data-lang-key="print-button">Drukuj CV</button>
-        <script src="index.js">
-    </script>
+    <button onclick="window.print()">Drukuj CV</button>
     <script src="./translations/translates.js"></script>
 </body>
 </html>
