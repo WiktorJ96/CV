@@ -36,18 +36,20 @@
     --background-color: #ecf0f1;
     --card-background: #ffffff;
 
-    --skill-languages: linear-gradient(135deg, #00796B, #004D40); /* zielony - programowanie */
-    --skill-technologies: linear-gradient(135deg, #6200EA, #311B92); /* fioletowy - nowoczesne narzędzia */
-    --skill-data-formats: linear-gradient(135deg, #03A9F4, #0288D1); /* niebieski - formaty danych */
-    --skill-IDE-Editors: linear-gradient(135deg, #455A64, #263238); /* szary - edytory kodu */
-    --skill-UX: linear-gradient(135deg, #FF7043, #BF360C); /* pomarańczowy - edytory UX/UI */
-    --skill-backend: linear-gradient(135deg, #6D4C41, #3E2723); /* brązowy - backend */
-    --skill-databases: linear-gradient(135deg, #8E24AA, #4A148C); /* głęboki fiolet - bazy danych */
-    --skill-cloud: linear-gradient(135deg, #0277BD, #01579B); /* ciemnoniebieski - chmura */
-    --skill-security: linear-gradient(135deg, #D32F2F, #B71C1C); /* czerwony - bezpieczeństwo */
-    --skill-testing: linear-gradient(135deg, #689F38, #33691E); /* oliwkowy - testowanie */
-    --skill-mobile-dev: linear-gradient(135deg, #FFA000, #FF6F00); /* pomarańczowy - mobile */
-    --skill-devops: linear-gradient(135deg, #FFB300, #FF8F00); /* złocisty bursztyn - DevOps */
+--skill-languages: linear-gradient(135deg, #292929, #1d1d1d);
+--skill-technologies: linear-gradient(135deg, #fccd11, #e09f05);
+--skill-data-formats: linear-gradient(135deg, #929492, #5e5d5d);
+--skill-IDE-Editors: linear-gradient(135deg, #44c7eb, #146ea5);
+--skill-UX: linear-gradient(135deg, #ff4400, #c23121);
+--skill-nosql: linear-gradient(135deg, #59a52a, #1b9a4c);
+--skill-api: linear-gradient(135deg, #0051a3, #0042a5);
+--skill-testing: linear-gradient(135deg, #3f0ea1, #312185);
+--skill-devops: linear-gradient(135deg, #4682B4, #5F9EA0);
+/* --skill-mobile-dev: linear-gradient(135deg, #FF1493, #C71585);
+--skill-databases: linear-gradient(135deg, #135ea0, #0069d3);
+--skill-security: linear-gradient(135deg, #DC143C, #8B0000); */
+
+
 
 
 }
@@ -324,6 +326,12 @@ a{
 }
 .tests{
     background-image: var(--skill-testing);
+}
+.api{
+    background-image: var(--skill-api);
+}
+.nosql{
+    background-image: var(--skill-nosql);
 }
 
 .progress-bar {

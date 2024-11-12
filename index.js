@@ -102,20 +102,22 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 
   const data = [
-    { technology: "JavaScript", procent: 75 },
-    { technology: "HTML5", procent: 73 },
-    { technology: "CSS5", procent: 35 },
-    { technology: "Bootstrap", procent: 58 },
-    { technology: "Sass", procent: 72 },
-    { technology: "React", procent: 47 },
-    { technology: "NodeJS", procent: 51 },
-    { technology: "ExpressJS", procent: 58 },
-    { technology: "Docker", procent: 36 },
-    { technology: "XML", procent: 60 },
-    { technology: "JSON", procent: 83 },
-    { technology: "Postman", procent: 60 },
-    { technology: "Figma", procent: 25 },
-    { technology: "VSC", procent: 73 },
+    { technology: "JavaScript", procent: 74 },
+    { technology: "HTML5", procent: 71 },
+    { technology: "CSS5", procent: 32 },
+    { technology: "Bootstrap", procent: 56 },
+    { technology: "Sass", procent: 68 },
+    { technology: "React", procent: 42 },
+    { technology: "NodeJS", procent: 45 },
+    { technology: "ExpressJS", procent: 54 },
+    { technology: "Docker", procent: 32 },
+    { technology: "MongoDB", procent: 48 },
+    { technology: "API", procent: 56},
+    { technology: "XML", procent: 56 },
+    { technology: "JSON", procent: 78 },
+    { technology: "Postman", procent: 58 },
+    { technology: "Figma", procent: 27 },
+    { technology: "VSC", procent: 71 },
     { technology: "IntelliJ", procent: 50 },
     { technology: "XMLStudio", procent: 60 },
   ];
@@ -144,6 +146,8 @@ const gradients = {
   NodeJS: ["#215732", "#8cc84b"], // Gradient Node.js
   ExpressJS: ["#7aae76", "#333332", "#212121", "hsla(0, 0%, 0%, 0.92)"], // Gradient Express.js
   Docker: ["#0db7ed", "#384d54", "#0db7ed"], // Gradient Docker
+  MongoDB: ["#47A248", "#67B35F", "#369E4B"], // Gradient MongoDB
+  API: ["#0078D7", "#00A8FF", "#003F88"], // Gradient API
   XML: ["#e066b3", "#a6d761", "#f5b14d", "#3393e0"], // Gradient XML
   JSON: ["#404040", "#4d4d4d", "#b3b3b3"], // Gradient JSON
   Postman: ["#ff6c37", "#ff8a00"], // Gradient Postman
@@ -233,5 +237,5 @@ svg
     .attr("class", "label")
     .attr("x", (d) => x(d.technology) + x.bandwidth() / 2)
     .attr("y", (d) => y(d.procent) - 5)
-    .text((d) => `${d.procent}%`);
+    .text((d) => `${d.procent}`);
 });
