@@ -90,16 +90,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
   });
 
-  particlesJS("particles-js", {
-    particles: {
-      number: { value: 80 },
-      color: { value: "#222" },
-      shape: { type: "circle" },
-      opacity: { value: 1, random: true },
-      size: { value: 5, random: true },
-      move: { enable: true, speed: 1 },
-    },
-  });
+  
 
   const data = [
     { technology: "JavaScript", procent: 74 },
