@@ -6,143 +6,172 @@
     <title data-lang-key="title">Wiktor Jurkowski - CV</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-</head>
-<style>
-    body {
-        font-family: 'Roboto', sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f4;
-        color: #333;
-    }
-
-    .container {
-        max-width: 900px;
-        margin: 20px auto;
-        padding: 20px;
-        background-color: #fff;
-        border-radius: 8px;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    }
-
-    header {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    h1 {
-        font-size: 28px;
-        margin: 0;
-        color: #3498db;
-    }
-
-    h2 {
-        font-size: 18px;
-        margin: 10px 0;
-        padding-bottom: 8px;
-        border-bottom: 1px solid #3498db;
-        color: #2c3e50;
-    }
-
-    p {
-        font-size: 16px;
-        line-height: 1.5;
-        margin: 5px 0;
-    }
-
-    ul {
-        padding-left: 20px;
-    }
-
-    ul li {
-        font-size: 14px;
-        margin-bottom: 5px;
-    }
-
-    .section {
-        margin-bottom: 20px;
-        page-break-inside: avoid;
-    }
-
-    button {
-        display: inline-block;
-        margin-top: 20px;
-        padding: 10px 20px;
-        font-size: 14px;
-        font-weight: bold;
-        background-color: #3498db;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
-    button:hover {
-        background-color: #2980b9;
-    }
-
-    @media print {
+    <style>
+        /* Oryginalne style */
         body {
-            background-color: white;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
 
         .container {
+            max-width: 900px;
+            margin: 20px auto;
             padding: 20px;
-            border: none;
-            box-shadow: none;
-            max-width: 100%;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
 
         header {
-            margin-top: 5px;
-            margin-bottom: 5px;
             text-align: center;
-            page-break-after: avoid;
+            margin-bottom: 20px;
         }
 
         h1 {
-            font-size: 13px;
+            font-size: 28px;
+            margin: 0;
+            color: #3498db;
         }
 
         h2 {
-            font-size: 12px;
-            margin: 8px 0;
-            padding-bottom: 5px;
+            font-size: 18px;
+            margin: 10px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #3498db;
+            color: #2c3e50;
         }
 
-        p, ul li {
-            font-size: 12px;
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 5px 0;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+            page-break-inside: avoid;
         }
 
         button {
-            display: none;
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 14px;
+            font-weight: bold;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
         }
 
-        section {
-            page-break-inside: avoid;
-        }
-        table{
-            font-size: 12px;
-        }
-        .main-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            column-gap: 20px;
-        }
-
-        .left-column, .right-column {
-            break-inside: avoid;
+        button:hover {
+            background-color: #2980b9;
         }
 
         .skills-list {
-            columns: 2;
-            column-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+
+        @media print {
+            body {
+                background-color: white;
+                margin: 0;
+                padding: 0;
+            }
+
+            .container {
+                padding: 20px;
+                border: none;
+                box-shadow: none;
+                max-width: 100%;
+            }
+
+            header {
+                margin-top: 5px;
+                margin-bottom: 5px;
+                text-align: center;
+                page-break-after: avoid;
+            }
+
+            h1 {
+                font-size: 13px;
+            }
+
+            h2 {
+                font-size: 12px;
+                margin: 8px 0;
+                padding-bottom: 5px;
+            }
+
+            p, ul li {
+                font-size: 12px;
+            }
+
+            button {
+                display: none;
+            }
+
+            section {
+                page-break-inside: avoid;
+            }
+
+            table {
+                font-size: 12px;
+            }
         }
-    }
-</style>
+
+        /* Nowe style dla paginacji i podziału na strony */
+        .page {
+            display: none;
+        }
+        .page.active {
+            display: block;
+        }
+        /* Pozwala na osobne stylowanie wielkości liter dla każdej strony */
+        .page.page1 {
+            font-size: 16px; /* Przykładowa wielkość liter dla strony 1 */
+        }
+        .page.page2 {
+            font-size: 18px; /* Przykładowa wielkość liter dla strony 2 */
+        }
+        .pagination {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .pagination span {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            margin: 0 5px;
+            border: 1px solid #3498db;
+            border-radius: 50%;
+            cursor: pointer;
+            color: #3498db;
+        }
+        .pagination span.active {
+            background-color: #3498db;
+            color: #fff;
+        }
+    </style>
+</head>
 <body data-page="index">
     <header>
         <h1 data-lang-key="name">Wiktor Jurkowski</h1>
@@ -151,11 +180,14 @@
     </header>
 
     <div class="container">
-        <div class="main-content">
+        <!-- Strona 1: CV bez sekcji z projektami -->
+        <div id="page-1" class="page page1 active">
             <div class="left-column">
                 <section class="section">
                     <h2 data-lang-key="about-me">O mnie</h2>
-                    <p data-lang-key="about-me-content">Interesuje mnie projektowanie i tworzenie stron internetowych oraz aplikacji. Moim celem jest rozwój na wielu płaszczyznach IT. Obecnie stawiam pierwsze kroki jako Full-Stack Developer, ale jestem zmotywowany, aby szybko zdobyć wiedzę w różnych technologiach.</p>
+                    <p data-lang-key="about-me-content">
+                        Interesuje mnie projektowanie i tworzenie stron internetowych oraz aplikacji. Moim celem jest rozwój na wielu płaszczyznach IT. Obecnie stawiam pierwsze kroki jako Full-Stack Developer, ale jestem zmotywowany, aby szybko zdobyć wiedzę w różnych technologiach.
+                    </p>
                 </section>
 
                 <section class="section">
@@ -260,35 +292,71 @@
                     <p data-lang-key="norwegian">Norweski (A2)</p>
                 </section>
             </div>
+        </div>
 
+        <!-- Strona 2: Projekty -->
+        <div id="page-2" class="page page2">
             <div class="right-column">
                 <section class="section">
                     <h2 data-lang-key="projects">Projekty</h2>
                     <h3>SmartPick</h3>
-                    <p data-lang-key="smartpick-description">SmartPick to aplikacja stworzona, aby ułatwić zarządzanie zakupami online. 
-                                Umożliwia tworzenie list sklepów internetowych i produktów z opcją dodawania opisów oraz linków. 
-                                Dzięki funkcji "ulubione" szybko znajdziesz produkty lub sklepy, które planujesz odwiedzić. 
-                                SmartPick pozwala także na bezpieczne przechowywanie kart płatniczych, zapewniając szybki dostęp do danych w razie potrzeby.</p>
+                    <p data-lang-key="smartpick-description">
+                        SmartPick to aplikacja stworzona, aby ułatwić zarządzanie zakupami online. 
+                        Umożliwia tworzenie list sklepów internetowych i produktów z opcją dodawania opisów oraz linków. 
+                        Dzięki funkcji "ulubione" szybko znajdziesz produkty lub sklepy, które planujesz odwiedzić. 
+                        SmartPick pozwala także na bezpieczne przechowywanie kart płatniczych, zapewniając szybki dostęp do danych w razie potrzeby.
+                    </p>
                     <hr>
                     <h3>Vault</h3>
-                    <p data-lang-key="vault-description">Vault to aplikacja do zarządzania finansami, umożliwiająca śledzenie wydatków oraz monitorowanie zmian salda konta poprzez przejrzyste wykresy. 
-                              Każdy przychód i wydatek można przypisać do odpowiednich kategorii, co ułatwia analizę i kontrolę finansów.</p>
+                    <p data-lang-key="vault-description">
+                        Vault to aplikacja do zarządzania finansami, umożliwiająca śledzenie wydatków oraz monitorowanie zmian salda konta poprzez przejrzyste wykresy. 
+                        Każdy przychód i wydatek można przypisać do odpowiednich kategorii, co ułatwia analizę i kontrolę finansów.
+                    </p>
                     <hr>
                     <h3>Chorely</h3>
-                    <p data-lang-key="chorely-description">Chorely to aplikacja typu „to-do", stworzona do zarządzania zadaniami.
-                                Umożliwia łatwe dodawanie, edytowanie, usuwanie oraz odznaczanie zadań jako wykonane.
-                                Aplikacja pozwala również na eksport listy zadań do pliku PDF z automatycznie generowaną tabelą, co ułatwia organizację i archiwizację pracy.</p>
+                    <p data-lang-key="chorely-description">
+                        Chorely to aplikacja typu „to-do", stworzona do zarządzania zadaniami.
+                        Umożliwia łatwe dodawanie, edytowanie, usuwanie oraz odznaczanie zadań jako wykonane.
+                        Aplikacja pozwala również na eksport listy zadań do pliku PDF z automatycznie generowaną tabelą, co ułatwia organizację i archiwizację pracy.
+                    </p>
                     <hr>
                     <h3>Thought Space</h3>
-                    <p data-lang-key="thought-space-description">Thought Space to prosta aplikacja notatnikowa, oferująca podstawowe funkcje zapisywania i organizowania notatek tekstowych. 
-                              Dzięki intuicyjnemu interfejsowi, umożliwia szybkie tworzenie i przechowywanie różnorodnych treści, 
-                              od krótkich przypomnień po dłuższe przemyślenia, pomagając uporządkować codzienne myśli i zadania.</p>
+                    <p data-lang-key="thought-space-description">
+                        Thought Space to prosta aplikacja notatnikowa, oferująca podstawowe funkcje zapisywania i organizowania notatek tekstowych. 
+                        Dzięki intuicyjnemu interfejsowi, umożliwia szybkie tworzenie i przechowywanie różnorodnych treści, 
+                        od krótkich przypomnień po dłuższe przemyślenia, pomagając uporządkować codzienne myśli i zadania.
+                    </p>
                 </section>
             </div>
         </div>
     </div>
 
+    <!-- Pasek paginacji -->
+    <div class="pagination">
+        <span id="p1" class="active" onclick="showPage(1)">1</span>
+        <span id="p2" onclick="showPage(2)">2</span>
+    </div>
+
     <button onclick="window.print()">Drukuj CV</button>
+    <script>
+        function showPage(pageNumber) {
+            // Usuwamy klasę 'active' z obu stron
+            document.getElementById('page-1').classList.remove('active');
+            document.getElementById('page-2').classList.remove('active');
+            // Usuwamy klasę 'active' z przycisków paginacji
+            document.getElementById('p1').classList.remove('active');
+            document.getElementById('p2').classList.remove('active');
+
+            // Dodajemy klasę 'active' do wybranej strony i przycisku
+            if (pageNumber === 1) {
+                document.getElementById('page-1').classList.add('active');
+                document.getElementById('p1').classList.add('active');
+            } else {
+                document.getElementById('page-2').classList.add('active');
+                document.getElementById('p2').classList.add('active');
+            }
+        }
+    </script>
     <script src="./translations/translates.js"></script>
 </body>
 </html>
