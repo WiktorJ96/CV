@@ -16,9 +16,24 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <style>
-  .edu-btn{
-    margin-left: 5px;
-  }
+  .edu-btn {
+  margin-left: 5px; /* odstęp */
+  padding: 8px 20px; /* przestrzeń wewnątrz */
+  background-color: #0077cc; /* ładny spokojny niebieski */
+  color: white; /* biały tekst */
+  border: 1px solid #0077cc; /* cienka ramka w kolorze tła */
+  border-radius: 6px; /* delikatne zaokrąglenie */
+  font-size: 15px; /* czytelna, nie za duża czcionka */
+  font-weight: 500; /* lekkie pogrubienie */
+  cursor: pointer; /* kursor ręki */
+  transition: background-color 0.3s, border-color 0.3s; /* płynne przejście koloru */
+}
+
+.edu-btn:hover {
+  background-color: #005fa3; /* trochę ciemniejszy niebieski przy najechaniu */
+  border-color: #005fa3; /* ramka też zmienia kolor */
+}
+
   .education{
      max-height: 280px; 
     overflow-y: auto; 
@@ -550,6 +565,7 @@ function quickSort(arr) {
                         <a href="./SKILLS/html-skills.html"><div class="skill-item languages" data-skill="Html"><i class="fas fa-mouse-pointer"></i>HTML5</div></a>
                         <a href="./SKILLS/css-skills.html"><div class="skill-item languages" data-skill="Css"><i class="fas fa-mouse-pointer"></i>CSS3</div></a>
                         <a href="./SKILLS/js-skills.html"><div class="skill-item languages" data-skill="JS"><i class="fas fa-mouse-pointer"></i>JavaScript</div></a>
+                        <a href="./SKILLS/SQL-skills.html"><div class="skill-item languages" data-skill="SQL"><i class="fas fa-mouse-pointer"></i>SQL</div></a>
                         <a href="./SKILLS/bootstrap-skills.html"><div class="skill-item technologies" data-skill="Bootstrap"><i class="fas fa-mouse-pointer"></i>Bootstrap</div></a>
                         <a href="./SKILLS/sass-skills.html"><div class="skill-item technologies" data-skill="Sass"><i class="fas fa-mouse-pointer"></i>SASS</div></a>
                         <a href="./SKILLS/react-skills.html"><div class="skill-item technologies" data-skill="React"><i class="fas fa-mouse-pointer"></i>React</div></a>

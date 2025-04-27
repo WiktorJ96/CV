@@ -36,15 +36,16 @@
     --background-color: #ecf0f1;
     --card-background: #ffffff;
 
---skill-languages: linear-gradient(135deg, #292929, #1d1d1d);
---skill-technologies: linear-gradient(135deg, #fccd11, #e09f05);
---skill-data-formats: linear-gradient(135deg, #929492, #5e5d5d);
---skill-IDE-Editors: linear-gradient(135deg, #44c7eb, #146ea5);
---skill-UX: linear-gradient(135deg, #ff4400, #c23121);
---skill-nosql: linear-gradient(135deg, #59a52a, #1b9a4c);
---skill-api: linear-gradient(135deg, #0051a3, #0042a5);
---skill-testing: linear-gradient(135deg, #3f0ea1, #312185);
---skill-devops: linear-gradient(135deg, #4682B4, #5F9EA0);
+--skill-languages: linear-gradient(135deg, #434343, #262626); /* głębszy grafit */
+--skill-technologies: linear-gradient(135deg, #ffc107, #ff8f00); /* nowoczesne złoto */
+--skill-data-formats: linear-gradient(135deg, #8e9eab, #eef2f3); /* elegancka szarość w stronę jasnej */
+--skill-IDE-Editors: linear-gradient(135deg, #00c6ff, #0072ff); /* żywy niebieski */
+--skill-UX: linear-gradient(135deg, #ff512f, #dd2476); /* modne czerwono-różowe przejście */
+--skill-nosql: linear-gradient(135deg, #56ab2f, #a8e063); /* świeża zieleń */
+--skill-api: linear-gradient(135deg, #396afc, #2948ff); /* głęboki niebieski */
+--skill-testing: linear-gradient(135deg, #8e2de2, #4a00e0); /* mocny fiolet */
+--skill-devops: linear-gradient(135deg, #43cea2, #185a9d); /* zieleń + niebieski, dynamiczne DevOps */
+
 /* --skill-mobile-dev: linear-gradient(135deg, #FF1493, #C71585);
 --skill-databases: linear-gradient(135deg, #135ea0, #0069d3);
 --skill-security: linear-gradient(135deg, #DC143C, #8B0000); */
@@ -55,12 +56,12 @@
 }
 
 .dark-theme {
-    --primary-color: #34495e;
-    --secondary-color: #2980b9;
-    --accent-color: #c0392b;
-    --text-color: #222;
-    --background-color: #2c3e50;
-    --card-background: #34495e;
+    --primary-color: #1f2937; /* ten sam – jest już ciemny i idealny */
+    --secondary-color: #3b82f6; /* jaśniejszy odcień niebieskiego jak w light-theme */
+    --accent-color: #ef4444; /* żywy, ale spokojniejszy czerwony */
+    --text-color: #333; /* jasny szary do ciemnego tła */
+    --background-color: #111827; /* bardzo ciemne granatowe tło */
+    --card-background: #1f2937; /* ten sam co primary, żeby karty były spójne */
 }
 
 body {

@@ -96,6 +96,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     { technology: "JavaScript", procent: 74 },
     { technology: "HTML5", procent: 71 },
     { technology: "CSS5", procent: 32 },
+    { technology: "SQL", procent: 52 },
     { technology: "Bootstrap", procent: 56 },
     { technology: "Sass", procent: 68 },
     { technology: "React", procent: 42 },
@@ -131,6 +132,7 @@ const gradients = {
   JavaScript: ["#ffd700", "#ffea00", "#ffc400"], // Gradient JS
   HTML5: ["#ff6b6b", "#ff7253", "#ffa94d"], // Gradient HTML5
   CSS5: ["#4e6ec8", "#83c0fa", "#4e81c8"], // Gradient CSS5
+  SQL: ["#3b82f6", "#60a5fa", "#2563eb"], // Gradient SQL
   Bootstrap: ["#563d7c", "#6f42c1", "#7952b3"], // Gradient Bootstrap
   Sass: ["#cf649a", "#f7a8c1", "#c76494"], // Gradient Sass
   React: ["#2d9cdb", "#61dafb"], // Gradient React
